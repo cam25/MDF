@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomTableCell.h
 //  Week1MDF
 //
 //  Created by Cameron Mozie on 4/8/13.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CustomTableCell : UITableViewCell
 {
-    
-    IBOutlet UITableView *tableView1;
-    NSArray *hairTypes;
+    IBOutlet UILabel *textLabel;
 }
+
 @end

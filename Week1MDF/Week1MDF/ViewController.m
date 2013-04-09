@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CustomTableCell.h"
 @interface ViewController ()
 
 @end
@@ -46,26 +46,36 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomTableCell *cell = [tableView1 dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+       // cell = [[CustomTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+        
+        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+        for (UIView *view in views) {
+            
+            if ([view isKindOfClass:[CustomTableCell class]]) {
+                
+                cell = (CustomTableCell*)view;
+            }
+        }
     }
-    
-    
-    NSInteger actualRow = 0;
-    actualRow = (indexPath.section * 10) + indexPath.row;
-  
-        
-        
-         cell.textLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
    
    
     
 
     return cell;
     
+   // NSInteger actualRow = 0;
+    //actualRow = (indexPath.section * 10) + indexPath.row;
+    
+    
+    
+   // cell.textLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
 }
 @end

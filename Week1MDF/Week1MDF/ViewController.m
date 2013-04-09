@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     
-    hairTypes = [[NSArray alloc] initWithObjects:@"Maylasian Hair",@"Brazilian Hair",@"African Hair",@"Indian Hair",@"Peruvian", @"Cambodian Hair",@"Russian Hair",@"Chinese Hair",@"European Hair",@"Filipino Hair",@"Regular Wigs",@"LaceFront Wigs",@"Glueless Wigs",@"Full Lace Wigs", @"Kids Lace Wigs",@"Human Hair Wigs", @"Hand Tied Wigs",@"Synthetic Wigs", @"Actress Wigs", @"Entertainer Wigs", nil];
+    hairTypes = [[NSMutableArray alloc] initWithObjects:@"Maylasian Hair",@"Brazilian Hair",@"African Hair",@"Indian ",@"Peruvian", @"Cambodian",@"Russian ",@"Chinese ",@"European",@"Filipino",@"Regular Wigs",@"LaceFront Wigs",@"Glueless Wigs",@"Full Lace Wigs", @"Kids Lace Wigs",@"Human Hair Wigs", @"Hand Tied Wigs",@"Synthetic Wigs",@"Actress Wigs",@"Entertainer Wigs", nil];
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -27,22 +29,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView1 numberOfRowsInSection:(NSInteger)section
 {
-    if(section == 0){
-        
-        return  10;
-        
-    }
-    else if (section == 1){
-        return 10;
-    }
-    return 0;
+    return [hairTypes count];
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 
@@ -62,6 +57,8 @@
             if ([view isKindOfClass:[CustomTableCell class]]) {
                 
                 cell = (CustomTableCell*)view;
+                
+                cell.textLabel.text = (NSString*)[hairTypes objectAtIndex:indexPath.row];
             }
         }
     }
@@ -71,11 +68,6 @@
 
     return cell;
     
-   // NSInteger actualRow = 0;
-    //actualRow = (indexPath.section * 10) + indexPath.row;
-    
-    
-    
-   // cell.textLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
+
 }
 @end

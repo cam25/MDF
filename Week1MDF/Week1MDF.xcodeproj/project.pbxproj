@@ -23,9 +23,6 @@
 		112FF1F417133E56005C11E4 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112FF1F317133E56005C11E4 /* CustomCellView.xib */; };
 		112FF1F617136B91005C11E4 /* iphone1.png in Resources */ = {isa = PBXBuildFile; fileRef = 112FF1F517136B91005C11E4 /* iphone1.png */; };
 		112FF1F817136B96005C11E4 /* iphoneRet.png in Resources */ = {isa = PBXBuildFile; fileRef = 112FF1F717136B96005C11E4 /* iphoneRet.png */; };
-		112FF1FB17136DD7005C11E4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 112FF1F917136C14005C11E4 /* Default.png */; };
-		112FF1FD17136E6C005C11E4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 112FF1FC17136E6C005C11E4 /* Default@2x.png */; };
-		112FF1FF17136EDC005C11E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 112FF1FE17136EDC005C11E4 /* Default-568h@2x.png */; };
 		112FF22E171371D3005C11E4 /* HAIR2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 112FF22D171371D3005C11E4 /* HAIR2.jpg */; };
 		112FF231171375B1005C11E4 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 112FF230171375B0005C11E4 /* CustomTableCell.m */; };
 /* End PBXBuildFile section */
@@ -201,9 +198,6 @@
 				112FF1F417133E56005C11E4 /* CustomCellView.xib in Resources */,
 				112FF1F617136B91005C11E4 /* iphone1.png in Resources */,
 				112FF1F817136B96005C11E4 /* iphoneRet.png in Resources */,
-				112FF1FB17136DD7005C11E4 /* Default.png in Resources */,
-				112FF1FD17136E6C005C11E4 /* Default@2x.png in Resources */,
-				112FF1FF17136EDC005C11E4 /* Default-568h@2x.png in Resources */,
 				112FF22E171371D3005C11E4 /* HAIR2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

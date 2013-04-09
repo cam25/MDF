@@ -12,6 +12,7 @@
 {
     
     IBOutlet UITableView *tableView1;
-    NSArray *hairTypes;
+    NSMutableArray *hairTypes;
+    NSMutableArray *rating;
 }
 @end

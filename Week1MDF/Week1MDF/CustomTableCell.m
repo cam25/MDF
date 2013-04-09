@@ -9,7 +9,7 @@
 #import "CustomTableCell.h"
 
 @implementation CustomTableCell
-
+@synthesize ratingLabel;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

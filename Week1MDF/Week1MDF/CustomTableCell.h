@@ -11,6 +11,7 @@
 @interface CustomTableCell : UITableViewCell
 {
     IBOutlet UILabel *textLabel;
+    IBOutlet UILabel *ratingLabel;
 }
-
+@property (assign) UILabel *ratingLabel;
 @end

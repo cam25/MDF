@@ -10,8 +10,10 @@
 
 @interface CustomTableCell : UITableViewCell
 {
-    IBOutlet UILabel *textLabel;
+   
     IBOutlet UILabel *ratingLabel;
+    IBOutlet UILabel *hairLabel;
 }
 @property (assign) UILabel *ratingLabel;
+@property (nonatomic, strong)UILabel *hairLabel;
 @end

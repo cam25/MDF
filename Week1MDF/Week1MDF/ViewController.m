@@ -34,7 +34,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView1 numberOfRowsInSection:(NSInteger)section
 {
-    
+/*
     if (section == 0) {
         return 10;
     }
@@ -44,10 +44,13 @@
 }
 return 0;
 }
-
+*/
+    return [hairTypes count];
+}
+    
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 
@@ -67,26 +70,26 @@ return 0;
             if ([view isKindOfClass:[CustomTableCell class]]) {
                 
                 cell = (CustomTableCell*)view;
-                cell.textLabel.text = (NSString*)[hairTypes objectAtIndex:indexPath.row];
-                cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"R-%@/10", [rating objectAtIndex:indexPath.row]];
+                cell.hairLabel.text = (NSString*)[hairTypes objectAtIndex:indexPath.row];
+                cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"Rating %@/10", [rating objectAtIndex:indexPath.row]];
             }
         }
     }
    
-    
+  /*
     NSInteger actualRow = 0;
     actualRow = (indexPath.section * 10) + indexPath.row;
     
     if (indexPath.section == 0) {
-        cell.textLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
-        cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"R-%@/10", [rating objectAtIndex:actualRow]];
+        cell.hairLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
+        cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"Rating %@/10", [rating objectAtIndex:actualRow]];
     }
     else if (indexPath.section == 1)
     {
-        cell.textLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
-        cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"R-%@/10", [rating objectAtIndex:actualRow]];
+        cell.hairLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
+        cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"Rating %@/10", [rating objectAtIndex:actualRow]];
     }
-
+*/
     return cell;
     
 
@@ -94,6 +97,7 @@ return 0;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"name=%@", [hairTypes objectAtIndex:indexPath.row]);
+   
+    NSLog(@"row=%d name=%@",indexPath.row, [hairTypes objectAtIndex:indexPath.row]);
 }
 @end

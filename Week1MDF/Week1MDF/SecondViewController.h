@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
+{
+    IBOutlet UIButton *backButton;
+    IBOutlet UILabel *detailLabel;
+    IBOutlet UITextView *detailText;
+}
 
+-(IBAction)backClick:(id)sender;//back click handler
+@property (assign) UITextView *detailText;//property assigned for text view
 @end

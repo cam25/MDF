@@ -9,7 +9,7 @@
 #import "CustomTableCell.h"
 
 @implementation CustomTableCell
-@synthesize ratingLabel,hairLabel;
+@synthesize ratingLabel,hairLabel;//synthesized for manipulating and passing from original view 
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

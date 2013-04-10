@@ -8,15 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate>
+@interface ViewController : UIViewController <UITableViewDelegate>//table view delegate 
 {
     
     IBOutlet UITableView *tableView1;
     NSMutableArray *hairTypes;
     NSMutableArray *rating;
+    NSMutableArray *hairInfo;
     IBOutlet UIButton *editButn;
     IBOutlet UIButton *done;
     
 }
--(IBAction)editClick:(id)sender;
+-(IBAction)editClick:(id)sender;//click handle
 @end

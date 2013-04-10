@@ -14,6 +14,6 @@
     IBOutlet UILabel *ratingLabel;
     IBOutlet UILabel *hairLabel;
 }
-@property (assign) UILabel *ratingLabel;
+@property (assign) UILabel *ratingLabel;//assigned properties for labels
 @property (nonatomic, strong)UILabel *hairLabel;
 @end

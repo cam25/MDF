@@ -13,6 +13,7 @@
 @end
 
 @implementation SecondViewController
+@synthesize detailText;//synthesized for passing from first view to second
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,5 +35,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//back function
+-(IBAction)backClick:(id)sender
+{
+    UIButton *button = (UIButton*)sender;
+    if (button.tag == 0) {
+        [self dismissViewControllerAnimated:YES completion:nil];//returns to first view controller
+    }
+}
+
 
 @end

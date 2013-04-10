@@ -14,5 +14,9 @@
     IBOutlet UITableView *tableView1;
     NSMutableArray *hairTypes;
     NSMutableArray *rating;
+    IBOutlet UIButton *editButn;
+    IBOutlet UIButton *done;
+    
 }
+-(IBAction)editClick:(id)sender;
 @end

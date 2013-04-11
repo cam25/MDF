@@ -41,17 +41,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView1 numberOfRowsInSection:(NSInteger)section
 {
-/*
-    if (section == 0) {
-        return 10;
-    }
-    else if (section == 1)
-{
-    return 10;
-}
-return 0;
-}
-*/
+
     return [hairTypes count];//returns number of hair types based on how many objects in array
 }
     
@@ -86,20 +76,6 @@ return 0;
         }
     }
    
-  /*
-    NSInteger actualRow = 0;
-    actualRow = (indexPath.section * 10) + indexPath.row;
-    
-    if (indexPath.section == 0) {
-        cell.hairLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
-        cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"Rating %@/10", [rating objectAtIndex:actualRow]];
-    }
-    else if (indexPath.section == 1)
-    {
-        cell.hairLabel.text = (NSString*)[hairTypes objectAtIndex:actualRow];
-        cell.ratingLabel.text = [[NSString alloc] initWithFormat:@"Rating %@/10", [rating objectAtIndex:actualRow]];
-    }
-*/
     return cell;
     
 

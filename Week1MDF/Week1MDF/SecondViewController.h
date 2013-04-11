@@ -17,4 +17,5 @@
 
 -(IBAction)backClick:(id)sender;//back click handler
 @property (assign) UITextView *detailText;//property assigned for text view
+@property (assign) UILabel *detailLabel;
 @end

@@ -13,7 +13,7 @@
 @end
 
 @implementation SecondViewController
-@synthesize detailText;//synthesized for passing from first view to second
+@synthesize detailText, detailLabel;//synthesized for passing from first view to second
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +26,8 @@
 
 - (void)viewDidLoad
 {
+    
+  
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

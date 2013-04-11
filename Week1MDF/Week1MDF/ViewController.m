@@ -93,9 +93,11 @@
     [self presentViewController:detailsView animated:YES completion:nil];
     
     
-    //sets the hair info text  to the textfield on second view at the index of the info in the array.
+    //sets the hair info text  to the textfield on second view based on the index of the selected cell.
     detailsView.detailText.text = (NSString*)[hairInfo objectAtIndex:indexPath.row];
     
+    //sets the label text  to the textfield on second view based on the index of the selected cell.
+    detailsView.detailLabel.text = (NSString*)[hairTypes objectAtIndex:indexPath.row];
     
     NSLog(@"row=%d name=%@",indexPath.row, [hairInfo objectAtIndex:indexPath.row]);
 }

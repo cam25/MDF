@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  week2MDF1
 //
 //  Created by Cameron Mozie on 4/12/13.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SecondViewController : UIViewController
 {
     
 }
--(IBAction)onClick:(id)sender;
+
 @end

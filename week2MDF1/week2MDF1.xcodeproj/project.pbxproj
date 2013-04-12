@@ -18,6 +18,8 @@
 		11A7042417187CCA003F2360 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A7042317187CCA003F2360 /* Default-568h@2x.png */; };
 		11A7042717187CCA003F2360 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7042617187CCA003F2360 /* ViewController.m */; };
 		11A7042A17187CCA003F2360 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A7042817187CCA003F2360 /* ViewController.xib */; };
+		11A7043117187FD7003F2360 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A7043017187FD7003F2360 /* SecondView.xib */; };
+		11A7043417188025003F2360 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7043317188025003F2360 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		11A7042517187CCA003F2360 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		11A7042617187CCA003F2360 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		11A7042917187CCA003F2360 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		11A7043017187FD7003F2360 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		11A7043217188025003F2360 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		11A7043317188025003F2360 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				11A7042617187CCA003F2360 /* ViewController.m */,
 				11A7042817187CCA003F2360 /* ViewController.xib */,
 				11A7041417187CCA003F2360 /* Supporting Files */,
+				11A7043017187FD7003F2360 /* SecondView.xib */,
+				11A7043217188025003F2360 /* SecondViewController.h */,
+				11A7043317188025003F2360 /* SecondViewController.m */,
 			);
 			path = week2MDF1;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				11A7042217187CCA003F2360 /* Default@2x.png in Resources */,
 				11A7042417187CCA003F2360 /* Default-568h@2x.png in Resources */,
 				11A7042A17187CCA003F2360 /* ViewController.xib in Resources */,
+				11A7043117187FD7003F2360 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				11A7041A17187CCA003F2360 /* main.m in Sources */,
 				11A7041E17187CCA003F2360 /* AppDelegate.m in Sources */,
 				11A7042717187CCA003F2360 /* ViewController.m in Sources */,
+				11A7043417188025003F2360 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +306,7 @@
 				11A7042F17187CCA003F2360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

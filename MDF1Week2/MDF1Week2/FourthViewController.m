@@ -1,35 +1,32 @@
 //
-//  FirstViewController.m
+//  FourthViewController.m
 //  MDF1Week2
 //
-//  Created by Cameron Mozie on 4/12/13.
+//  Created by Cameron Mozie on 4/14/13.
 //  Copyright (c) 2013 Cameron Mozie. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "FourthViewController.h"
 
-@interface FirstViewController ()
+@interface FourthViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation FourthViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        // Custom initialization
     }
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
-    
-    self.title = @"Home";
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

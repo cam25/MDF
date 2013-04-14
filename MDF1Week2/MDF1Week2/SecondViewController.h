@@ -10,4 +10,10 @@
 
 @interface SecondViewController : UIViewController
 
+{
+    NSArray *xmlInfo;
+    NSArray *xmlDetails;
+    IBOutlet UITableView *tableView1;
+    IBOutlet UILabel *labelTitle;
+}
 @end

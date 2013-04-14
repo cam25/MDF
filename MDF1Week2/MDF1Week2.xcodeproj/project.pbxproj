@@ -24,6 +24,11 @@
 		11A704661718856E003F2360 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A704651718856E003F2360 /* second@2x.png */; };
 		11A704691718856E003F2360 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A704671718856E003F2360 /* FirstViewController.xib */; };
 		11A7046C1718856E003F2360 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A7046A1718856E003F2360 /* SecondViewController.xib */; };
+		11A7047317188696003F2360 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A7047217188696003F2360 /* ThirdViewController.xib */; };
+		11A70476171886B3003F2360 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A70475171886B3003F2360 /* ThirdViewController.m */; };
+		11A7047817189639003F2360 /* XML.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A7047717189638003F2360 /* XML.png */; };
+		11A7047A171A725C003F2360 /* FourthViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A70479171A725C003F2360 /* FourthViewView.xib */; };
+		11A7047D171A7296003F2360 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7047C171A7296003F2360 /* FourthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,13 @@
 		11A704651718856E003F2360 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		11A704681718856E003F2360 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		11A7046B1718856E003F2360 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		11A7047217188696003F2360 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		11A70474171886B3003F2360 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		11A70475171886B3003F2360 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		11A7047717189638003F2360 /* XML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XML.png; sourceTree = "<group>"; };
+		11A70479171A725C003F2360 /* FourthViewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewView.xib; sourceTree = "<group>"; };
+		11A7047B171A7296003F2360 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		11A7047C171A7296003F2360 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,7 @@
 		11A704471718856E003F2360 /* MDF1Week2 */ = {
 			isa = PBXGroup;
 			children = (
+				11A7047717189638003F2360 /* XML.png */,
 				11A704501718856E003F2360 /* AppDelegate.h */,
 				11A704511718856E003F2360 /* AppDelegate.m */,
 				11A704591718856E003F2360 /* FirstViewController.h */,
@@ -109,6 +122,12 @@
 				11A704671718856E003F2360 /* FirstViewController.xib */,
 				11A7046A1718856E003F2360 /* SecondViewController.xib */,
 				11A704481718856E003F2360 /* Supporting Files */,
+				11A7047217188696003F2360 /* ThirdViewController.xib */,
+				11A70474171886B3003F2360 /* ThirdViewController.h */,
+				11A70475171886B3003F2360 /* ThirdViewController.m */,
+				11A70479171A725C003F2360 /* FourthViewView.xib */,
+				11A7047B171A7296003F2360 /* FourthViewController.h */,
+				11A7047C171A7296003F2360 /* FourthViewController.m */,
 			);
 			path = MDF1Week2;
 			sourceTree = "<group>";
@@ -188,6 +207,9 @@
 				11A704661718856E003F2360 /* second@2x.png in Resources */,
 				11A704691718856E003F2360 /* FirstViewController.xib in Resources */,
 				11A7046C1718856E003F2360 /* SecondViewController.xib in Resources */,
+				11A7047317188696003F2360 /* ThirdViewController.xib in Resources */,
+				11A7047817189639003F2360 /* XML.png in Resources */,
+				11A7047A171A725C003F2360 /* FourthViewView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +224,8 @@
 				11A704521718856E003F2360 /* AppDelegate.m in Sources */,
 				11A7045B1718856E003F2360 /* FirstViewController.m in Sources */,
 				11A704621718856E003F2360 /* SecondViewController.m in Sources */,
+				11A70476171886B3003F2360 /* ThirdViewController.m in Sources */,
+				11A7047D171A7296003F2360 /* FourthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +354,7 @@
 				11A704711718856E003F2360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

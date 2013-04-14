@@ -1,35 +1,34 @@
 //
-//  FirstViewController.m
+//  ThirdViewController.m
 //  MDF1Week2
 //
 //  Created by Cameron Mozie on 4/12/13.
 //  Copyright (c) 2013 Cameron Mozie. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ThirdViewController.h"
 
-@interface FirstViewController ()
+@interface ThirdViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ThirdViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        // Custom initialization
+        self.title = NSLocalizedString(@"Third", @"Third");
+        self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
-    
-    self.title = @"Home";
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

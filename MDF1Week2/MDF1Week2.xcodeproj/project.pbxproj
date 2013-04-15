@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		115A9607171C28D8007CC735 /* ChidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A9606171C28D8007CC735 /* ChidViewController.m */; };
 		115A9609171C28F1007CC735 /* ChildView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A9608171C28F1007CC735 /* ChildView.xib */; };
+		115A960B171C8F17007CC735 /* childView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A960A171C8F17007CC735 /* childView2.xib */; };
+		115A960E171C8F99007CC735 /* SecondChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A960D171C8F99007CC735 /* SecondChildViewController.m */; };
 		11A704421718856E003F2360 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A704411718856E003F2360 /* UIKit.framework */; };
 		11A704441718856E003F2360 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A704431718856E003F2360 /* Foundation.framework */; };
 		11A704461718856E003F2360 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A704451718856E003F2360 /* CoreGraphics.framework */; };
@@ -37,6 +39,9 @@
 		115A9605171C28D8007CC735 /* ChidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChidViewController.h; sourceTree = "<group>"; };
 		115A9606171C28D8007CC735 /* ChidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChidViewController.m; sourceTree = "<group>"; };
 		115A9608171C28F1007CC735 /* ChildView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildView.xib; sourceTree = "<group>"; };
+		115A960A171C8F17007CC735 /* childView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = childView2.xib; sourceTree = "<group>"; };
+		115A960C171C8F99007CC735 /* SecondChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondChildViewController.h; sourceTree = "<group>"; };
+		115A960D171C8F99007CC735 /* SecondChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondChildViewController.m; sourceTree = "<group>"; };
 		11A7043E1718856E003F2360 /* MDF1Week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1Week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A704411718856E003F2360 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11A704431718856E003F2360 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +141,9 @@
 				115A9605171C28D8007CC735 /* ChidViewController.h */,
 				115A9606171C28D8007CC735 /* ChidViewController.m */,
 				115A9608171C28F1007CC735 /* ChildView.xib */,
+				115A960A171C8F17007CC735 /* childView2.xib */,
+				115A960C171C8F99007CC735 /* SecondChildViewController.h */,
+				115A960D171C8F99007CC735 /* SecondChildViewController.m */,
 			);
 			path = MDF1Week2;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 				11A7047817189639003F2360 /* XML.png in Resources */,
 				11A7047A171A725C003F2360 /* FourthView.xib in Resources */,
 				115A9609171C28F1007CC735 /* ChildView.xib in Resources */,
+				115A960B171C8F17007CC735 /* childView2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +245,7 @@
 				11A70476171886B3003F2360 /* ThirdViewController.m in Sources */,
 				11A7047D171A7296003F2360 /* FourthViewController.m in Sources */,
 				115A9607171C28D8007CC735 /* ChidViewController.m in Sources */,
+				115A960E171C8F99007CC735 /* SecondChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

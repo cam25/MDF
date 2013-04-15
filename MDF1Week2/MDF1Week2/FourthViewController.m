@@ -34,5 +34,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(IBAction)backClick:(id)sender
+{
+    UIButton *button = (UIButton*)sender;
+    if (button.tag == 0) {
+        [self dismissViewControllerAnimated:YES completion:nil];//returns to first view controller
+    }
+}
 
 @end

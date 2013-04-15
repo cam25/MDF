@@ -15,7 +15,7 @@
     IBOutlet UILabel *urlLabel;
     
 }
-
+-(IBAction)backClick:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextView *detailText;
 @property (strong, nonatomic) IBOutlet UILabel *detailLabel;
 @property (strong, nonatomic) IBOutlet UILabel *urlLabel;

@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-
+#import "ChidViewController.h"
 @interface FirstViewController ()
 
 @end
@@ -28,6 +28,7 @@
 {
     
     self.title = @"Home";
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -38,4 +39,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)onClick:(id)sender
+{
+    ChidViewController *childView = [[ChidViewController alloc]initWithNibName:@"ChildView" bundle:nil];
+    if (childView != nil) {
+        [self.navigationController pushViewController:childView animated:true];
+    }
+}
 @end

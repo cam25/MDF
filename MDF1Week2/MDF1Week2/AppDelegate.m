@@ -14,6 +14,8 @@
 
 #import "ThirdViewController.h"
 
+#import "ChidViewController.h"
+
 @implementation AppDelegate
 
 - (void)dealloc
@@ -30,12 +32,16 @@
     UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
     UIViewController *viewController3 = [[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil] autorelease];
+    
+
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    
+
     
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = @[navController, viewController2,viewController3];
     self.window.rootViewController = self.tabBarController;
-    self.window.rootViewController = navController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

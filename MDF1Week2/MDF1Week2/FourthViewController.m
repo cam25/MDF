@@ -13,7 +13,7 @@
 @end
 
 @implementation FourthViewController
-
+@synthesize detailText, detailLabel,urlLabel;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

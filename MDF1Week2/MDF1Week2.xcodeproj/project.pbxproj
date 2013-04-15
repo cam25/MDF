@@ -27,7 +27,7 @@
 		11A7047317188696003F2360 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A7047217188696003F2360 /* ThirdViewController.xib */; };
 		11A70476171886B3003F2360 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A70475171886B3003F2360 /* ThirdViewController.m */; };
 		11A7047817189639003F2360 /* XML.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A7047717189638003F2360 /* XML.png */; };
-		11A7047A171A725C003F2360 /* FourthViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A70479171A725C003F2360 /* FourthViewView.xib */; };
+		11A7047A171A725C003F2360 /* FourthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A70479171A725C003F2360 /* FourthView.xib */; };
 		11A7047D171A7296003F2360 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7047C171A7296003F2360 /* FourthViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		11A70474171886B3003F2360 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		11A70475171886B3003F2360 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		11A7047717189638003F2360 /* XML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XML.png; sourceTree = "<group>"; };
-		11A70479171A725C003F2360 /* FourthViewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewView.xib; sourceTree = "<group>"; };
+		11A70479171A725C003F2360 /* FourthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthView.xib; sourceTree = "<group>"; };
 		11A7047B171A7296003F2360 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		11A7047C171A7296003F2360 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 				11A7047217188696003F2360 /* ThirdViewController.xib */,
 				11A70474171886B3003F2360 /* ThirdViewController.h */,
 				11A70475171886B3003F2360 /* ThirdViewController.m */,
-				11A70479171A725C003F2360 /* FourthViewView.xib */,
+				11A70479171A725C003F2360 /* FourthView.xib */,
 				11A7047B171A7296003F2360 /* FourthViewController.h */,
 				11A7047C171A7296003F2360 /* FourthViewController.m */,
 			);
@@ -209,7 +209,7 @@
 				11A7046C1718856E003F2360 /* SecondViewController.xib in Resources */,
 				11A7047317188696003F2360 /* ThirdViewController.xib in Resources */,
 				11A7047817189639003F2360 /* XML.png in Resources */,
-				11A7047A171A725C003F2360 /* FourthViewView.xib in Resources */,
+				11A7047A171A725C003F2360 /* FourthView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

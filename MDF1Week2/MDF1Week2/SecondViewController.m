@@ -29,7 +29,11 @@
 {
     
     xmlInfo = [[NSArray alloc] initWithObjects:@"XML?", @"XML Indexing?",@"Special XML Characters", nil];
-    xmlDetails = [[NSArray alloc]initWithObjects:@"XML stands for eXtended Markup Language. Its a documuent that is designed using a set of elements to show where a paragraph begins/ends and or where list items start and end. XML is basically the complete structure of an HTML document. It allows you to divide your page into sections for manipulation in other documents and display elements in an html doc a certain way.",@"XML Indexing is a form of embedded indexing in which tags are inserted into an XML document to mark the occurences of indexable terms or topics. The good thing about XML Indexing is that the publishing process automatically generates an index from the embeded index elements. The process handles the layout in ways such as font, size, style, indenting, and word by word or letter by letter alphabetization. Due to the process handling all the layout its one less concern for the developer.",@"XML Indexing special characters and symbols are used often times when publishing computer books. Certain symbols such as the Greek omega Ω symbol is represented as &omega and the & has special meanings in XML and is always represented by &amp.", nil];
+    xmlDetails = [[NSArray alloc]initWithObjects:@"XML stands for eXtended Markup Language. Its a documuent that is designed using a set of elements to show where a paragraph begins/ends and or where list items start and end. XML is basically the complete structure of an HTML document. It allows you to divide your page into sections for manipulation in other documents and display elements in an html doc a certain way. \n http://web.ebscohost.com.oclc.fullsail.edu:81/ehost/pdfviewer/pdfviewer?sid=8ff23a1d-21b5-4e0d-af23-5d16ec74a30e%40sessionmgr14&vid=5&hid=11",@"XML Indexing is a form of embedded indexing in which tags are inserted into an XML document to mark the occurences of indexable terms or topics. The good thing about XML Indexing is that the publishing process automatically generates an index from the embeded index elements. The process handles the layout in ways such as font, size, style, indenting, and word by word or letter by letter alphabetization. Due to the process handling all the layout its one less concern for the developer. \n http://web.ebscohost.com.oclc.fullsail.edu:81/ehost/pdfviewer/pdfviewer?sid=8ff23a1d-21b5-4e0d-af23-5d16ec74a30e%40sessionmgr14&vid=5&hid=11",@"XML Indexing special characters and symbols are used often times when publishing computer books. Certain symbols such as the Greek omega Ω symbol is represented as &omega and the & has special meanings in XML and is always represented by &amp. \n http://web.ebscohost.com.oclc.fullsail.edu:81/ehost/pdfviewer/pdfviewer?sid=8ff23a1d-21b5-4e0d-af23-5d16ec74a30e%40sessionmgr14&vid=5&hid=11", nil];
+    
+    
+    //urls = [[NSArray alloc] initWithObjects:@"http://web.ebscohost.com.oclc.fullsail.edu:81/ehost/pdfviewer/pdfviewer?sid=8ff23a1d-21b5-4e0d-af23-5d16ec74a30e%40sessionmgr14&vid=5&hid=11",@"http://web.ebscohost.com.oclc.fullsail.edu:81/ehost/pdfviewer/pdfviewer?sid=8ff23a1d-21b5-4e0d-af23-5d16ec74a30e%40sessionmgr14&vid=5&hid=11",@"http://web.ebscohost.com.oclc.fullsail.edu:81/ehost/pdfviewer/pdfviewer?sid=8ff23a1d-21b5-4e0d-af23-5d16ec74a30e%40sessionmgr14&vid=5&hid=11", nil];
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -75,7 +79,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    FourthViewController *detailView = [[FourthViewController alloc] initWithNibName:@"FourthViewController" bundle:nil];
-    [self presentViewController:detailView animated:YES completion:nil];
+    NSLog(@"row =%d", indexPath.row);
+    FourthViewController *detailView = [[FourthViewController alloc] initWithNibName:@"FourthView" bundle:nil];
+    if (detailView != nil) {
+        
+         [self presentViewController:detailView animated:YES completion:nil];
+        [self.navigationController pushViewController:detailView animated:TRUE];
+        detailView.detailText.text = (NSString*)[xmlDetails objectAtIndex:indexPath.row];
+        detailView.detailLabel.text = (NSString*)[xmlInfo objectAtIndex:indexPath.row];
+        detailView.urlLabel.text = (NSString*)[urls objectAtIndex:indexPath.row];
+        
+
+        
+       
+    }
+   
 }
 @end

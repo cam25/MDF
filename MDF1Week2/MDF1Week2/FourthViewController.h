@@ -12,7 +12,11 @@
 {
     IBOutlet UILabel *detailLabel;
     IBOutlet UITextView *detailText;
+    IBOutlet UILabel *urlLabel;
     
 }
 
+@property (strong, nonatomic) IBOutlet UITextView *detailText;
+@property (strong, nonatomic) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) IBOutlet UILabel *urlLabel;
 @end

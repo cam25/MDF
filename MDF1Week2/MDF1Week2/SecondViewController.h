@@ -13,6 +13,7 @@
 {
     NSArray *xmlInfo;
     NSArray *xmlDetails;
+    NSArray *urls;
     IBOutlet UITableView *tableView1;
     IBOutlet UILabel *labelTitle;
 }

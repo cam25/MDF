@@ -35,6 +35,7 @@
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = @[navController, viewController2,viewController3];
     self.window.rootViewController = self.tabBarController;
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }

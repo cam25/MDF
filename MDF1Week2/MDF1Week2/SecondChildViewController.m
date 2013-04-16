@@ -7,7 +7,7 @@
 //
 
 #import "SecondChildViewController.h"
-
+#import "ThirdChildViewController.h"
 @interface SecondChildViewController ()
 
 @end
@@ -25,6 +25,9 @@
 
 - (void)viewDidLoad
 {
+    
+    self.title = @"Second Child View";
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -35,4 +38,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)onClick:(id)sender
+{
+    ThirdChildViewController *thirdChildView = [[ThirdChildViewController alloc]initWithNibName:@"ChildView3" bundle:nil];
+    if (thirdChildView != nil) {
+        [self.navigationController pushViewController:thirdChildView animated:true];
+    }
+}
 @end

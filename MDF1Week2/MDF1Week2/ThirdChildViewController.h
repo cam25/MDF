@@ -1,5 +1,5 @@
 //
-//  SecondChildViewController.h
+//  ThirdChildViewController.h
 //  MDF1Week2
 //
 //  Created by Cameron Mozie on 4/15/13.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondChildViewController : UIViewController
-{
-    
-}
--(IBAction)onClick:(id)sender;
+@interface ThirdChildViewController : UIViewController
+
 @end

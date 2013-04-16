@@ -15,6 +15,7 @@
 #import "ThirdViewController.h"
 
 #import "ChidViewController.h"
+
 #import "SecondChildViewController.h"
 
 @implementation AppDelegate
@@ -34,7 +35,7 @@
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
     UIViewController *viewController3 = [[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil] autorelease];
     
-UIViewController *viewController4 = [[[SecondChildViewController alloc] initWithNibName:@"SecondChildViewController" bundle:nil] autorelease];
+
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
     

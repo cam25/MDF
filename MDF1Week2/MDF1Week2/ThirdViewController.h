@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ThirdViewController : UIViewController
-
+#import "appInfoFactory.h"
+@class appInfoFactory;
+@interface ThirdViewController : UIViewController <UITextViewDelegate>
+{
+    IBOutlet UITextView *textInfo;
+}
 @end

@@ -7,7 +7,8 @@
 //
 
 #import "ThirdViewController.h"
-
+#import "appInfo.h"
+#import "appInfoFactory.h"
 @interface ThirdViewController ()
 
 @end
@@ -19,7 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"Third", @"Third");
+        self.title = NSLocalizedString(@"Custom", @"Custom");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
@@ -27,6 +28,23 @@
 
 - (void)viewDidLoad
 {
+  
+    appInfo *information = [[appInfo alloc] initWithName:@"info"];
+    [[appInfoFactory sharedAppInfoFactory ] showInfo];
+    appInfoFactory *manager = [appInfoFactory sharedAppInfoFactory];
+    if (manager != nil) {
+        
+        NSMutableArray *myInfo = manager.info;
+        if (myInfo != nil) {
+            
+            [myInfo addObject:information];
+           textInfo.text =  [myInfo objectAtIndex:1];
+            
+           
+        }
+    }
+
+       
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

@@ -7,8 +7,8 @@
 //
 
 #import "ThirdViewController.h"
-#import "appInfo.h"
-#import "appInfoFactory.h"
+#import "appInfoClass.h"
+
 @interface ThirdViewController ()
 
 @end
@@ -28,23 +28,8 @@
 
 - (void)viewDidLoad
 {
-  
-    appInfo *information = [[appInfo alloc] initWithName:@"info"];
-    [[appInfoFactory sharedAppInfoFactory ] showInfo];
-    appInfoFactory *manager = [appInfoFactory sharedAppInfoFactory];
-    if (manager != nil) {
-        
-        NSMutableArray *myInfo = manager.info;
-        if (myInfo != nil) {
-            
-            [myInfo addObject:information];
-           textInfo.text =  [myInfo objectAtIndex:1];
-            
-           
-        }
-    }
-
-       
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -54,5 +39,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

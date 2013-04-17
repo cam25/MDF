@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
     
-    self.title = @"Third Child View";
+    self.title = @"Final View";
     
    
     [super viewDidLoad];

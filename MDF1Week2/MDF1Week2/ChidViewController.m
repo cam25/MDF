@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     
-    self.title = @"Child View";
+    self.title = @"Ex.XML Markup";
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

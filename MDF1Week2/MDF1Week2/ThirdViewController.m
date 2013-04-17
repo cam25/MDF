@@ -14,6 +14,7 @@
 @end
 
 @implementation ThirdViewController
+@synthesize userInfo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,17 +29,32 @@
 
 - (void)viewDidLoad
 {
+    detailArray = [[NSMutableArray alloc] init];
+    
+    appInfoClass *details = [[appInfoClass alloc] initWithDetails:@"Cameron Mozie" date:@"04/24/2013" school:@"Full Sail University" term:@"1304"];
+    
+    [detailArray addObject:details];
+    
+  
+    name.text = details.devName;
+    Date.text = details.devDate;
+    School.text = details.devSchool;
+    Term.text = details.devTerm;
     
     
+    
+   
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

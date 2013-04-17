@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		11406B7E171DD1A900296DEE /* appInfoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406B7D171DD1A900296DEE /* appInfoClass.m */; };
+		11406B80171F38B100296DEE /* nextPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 11406B7F171F38B100296DEE /* nextPage.png */; };
+		11406B82171F3BA600296DEE /* XMLInclusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 11406B81171F3BA600296DEE /* XMLInclusion.png */; };
+		11406B84171F3D0300296DEE /* XMLimage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 11406B83171F3D0300296DEE /* XMLimage3.png */; };
+		11406B86171F3D0B00296DEE /* page2XML.png in Resources */ = {isa = PBXBuildFile; fileRef = 11406B85171F3D0B00296DEE /* page2XML.png */; };
 		115A9607171C28D8007CC735 /* ChidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A9606171C28D8007CC735 /* ChidViewController.m */; };
 		115A9609171C28F1007CC735 /* ChildView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A9608171C28F1007CC735 /* ChildView.xib */; };
 		115A960B171C8F17007CC735 /* childView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A960A171C8F17007CC735 /* childView2.xib */; };
@@ -41,6 +45,10 @@
 /* Begin PBXFileReference section */
 		11406B7C171DD1A900296DEE /* appInfoClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appInfoClass.h; sourceTree = "<group>"; };
 		11406B7D171DD1A900296DEE /* appInfoClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = appInfoClass.m; sourceTree = "<group>"; };
+		11406B7F171F38B100296DEE /* nextPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextPage.png; sourceTree = "<group>"; };
+		11406B81171F3BA600296DEE /* XMLInclusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XMLInclusion.png; sourceTree = "<group>"; };
+		11406B83171F3D0300296DEE /* XMLimage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XMLimage3.png; sourceTree = "<group>"; };
+		11406B85171F3D0B00296DEE /* page2XML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2XML.png; sourceTree = "<group>"; };
 		115A9605171C28D8007CC735 /* ChidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChidViewController.h; sourceTree = "<group>"; };
 		115A9606171C28D8007CC735 /* ChidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChidViewController.m; sourceTree = "<group>"; };
 		115A9608171C28F1007CC735 /* ChildView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildView.xib; sourceTree = "<group>"; };
@@ -126,6 +134,10 @@
 		11A704471718856E003F2360 /* MDF1Week2 */ = {
 			isa = PBXGroup;
 			children = (
+				11406B85171F3D0B00296DEE /* page2XML.png */,
+				11406B83171F3D0300296DEE /* XMLimage3.png */,
+				11406B81171F3BA600296DEE /* XMLInclusion.png */,
+				11406B7F171F38B100296DEE /* nextPage.png */,
 				11A7047717189638003F2360 /* XML.png */,
 				11A704501718856E003F2360 /* AppDelegate.h */,
 				11A704511718856E003F2360 /* AppDelegate.m */,
@@ -242,6 +254,10 @@
 				115A9609171C28F1007CC735 /* ChildView.xib in Resources */,
 				115A960B171C8F17007CC735 /* childView2.xib in Resources */,
 				115A9613171C9878007CC735 /* ChildView3.xib in Resources */,
+				11406B80171F38B100296DEE /* nextPage.png in Resources */,
+				11406B82171F3BA600296DEE /* XMLInclusion.png in Resources */,
+				11406B84171F3D0300296DEE /* XMLimage3.png in Resources */,
+				11406B86171F3D0B00296DEE /* page2XML.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

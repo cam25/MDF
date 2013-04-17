@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ThirdViewController : UIViewController <UITextViewDelegate>
+#import "appInfoClass.h"
+@interface ThirdViewController : UIViewController  <UITableViewDataSource, UITextViewDelegate>
 {
     IBOutlet UITextView *textInfo;
+    IBOutlet UILabel *name;
+    IBOutlet UILabel *Date;
+    IBOutlet UILabel *School;
+    IBOutlet UILabel *Term;
+    NSMutableArray *detailArray;
+    
+   
 }
+
+@property (nonatomic, strong)appInfoClass *userInfo;
 @end

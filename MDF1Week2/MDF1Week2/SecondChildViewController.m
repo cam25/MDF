@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     
-    self.title = @"Second Child View";
+    self.title = @"Under Construction";
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.

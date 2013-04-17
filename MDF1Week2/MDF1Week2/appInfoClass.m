@@ -9,39 +9,30 @@
 #import "appInfoClass.h"
 #import "ThirdChildViewController.h"
 @implementation appInfoClass
+@synthesize devDate,devTerm,devSchool,devName;
 
-@synthesize Name,date,term,School,details;
-static appInfoClass *_sharedAppInfoClass = nil;
 
-+(appInfoClass*)sharedAppInfoClass
-{
-    if(!_sharedAppInfoClass){
-        _sharedAppInfoClass = [[self alloc] init];
-    }
-    return _sharedAppInfoClass;
-}
 
--(id)init
+-(id)initWithDetails:(NSString*)name date:(NSString*)Date school:(NSString*)School term:(NSString*)term;
+
 {
     self = [super init];
     if (self !=nil)
     {
-        [self setName:@"Cameron Mozie"];
-        [self setDate:@"04/16/2012"];
-        [self setTerm:@"1304"];
-        [self setSchool:@"Full Sail University"];
+       
+        devName = name;
+        devDate = Date;
+        devSchool = School;
+        devTerm = term;
         
-        [details addObject:Name];
-        [details addObject:date];
-        [details addObject:term];
-        [details addObject:School];
+       
     }
     return self;
 };
 
 -(void)showInfo{
     
-     NSLog(@"%@",self.details);
+ 
     
    
 }

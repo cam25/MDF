@@ -10,19 +10,20 @@
 @class  appInfoClass;
 @interface appInfoClass : NSObject
 {
-    NSString *Name;
-    NSString *date;
-    NSString *School;
-    NSString *term;
+    NSString *devName;
+    NSString *devDate;
+    NSString *devSchool;
+    NSString *devTerm;
     NSMutableArray *details;
 }
 
-@property (nonatomic,strong)NSString *Name;
-@property (nonatomic,strong)NSString *date;
-@property (nonatomic,strong)NSString *School;
-@property (nonatomic,strong)NSString *term;
-@property (nonatomic,strong)NSMutableArray *details;
 
--(id)init;
+
+-(id)initWithDetails:(NSString *)name date:(NSString*)date school:(NSString*)School term:(NSString*)Term;
 -(void)showInfo;
+
+@property (nonatomic, readonly)NSString *devName;
+@property (nonatomic, readonly)NSString *devDate;
+@property (nonatomic, readonly)NSString *devSchool;
+@property (nonatomic, readonly)NSString *devTerm;
 @end

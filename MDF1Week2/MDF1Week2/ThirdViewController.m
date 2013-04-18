@@ -31,7 +31,7 @@
 {
     detailArray = [[NSMutableArray alloc] init];//array
     
-    appInfoClass *details = [[appInfoClass alloc] initWithDetails:@"Cameron Mozie" date:@"04/20/2013" school:@"Full Sail University" term:@"1304" course:@"MDF1"];//setting properties to an init
+    appInfoClass *details = [[appInfoClass alloc] initWithDetails:@"Cameron Mozie" date:@"04/18/2013" school:@"Full Sail University" term:@"1304" course:@"MDF1"];//setting properties to an init
     
     [detailArray addObject:details];//adding objects to array
     

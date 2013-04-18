@@ -12,7 +12,7 @@
 @synthesize devDate,devTerm,devSchool,devName,devCourse;
 
 
-
+//init method for passing properties from nsobject 
 -(id)initWithDetails:(NSString*)name date:(NSString*)Date school:(NSString*)School term:(NSString*)term course:(NSString*)course;
 
 {

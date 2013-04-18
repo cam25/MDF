@@ -22,7 +22,7 @@
     if (self) {
         // Custom initialization
         self.title = NSLocalizedString(@"Custom", @"Custom");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
 }

@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
     
-    self.title = @"Final View";
+    self.title = @"Final View";//title for nav
     
    
     [super viewDidLoad];

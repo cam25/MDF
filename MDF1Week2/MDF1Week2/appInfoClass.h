@@ -14,16 +14,18 @@
     NSString *devDate;
     NSString *devSchool;
     NSString *devTerm;
+    NSString *devCourse;
     NSMutableArray *details;
 }
 
 
+//method for passing data to view from array
+-(id)initWithDetails:(NSString *)name date:(NSString*)date school:(NSString*)School term:(NSString*)Term course:(NSString*)course;
 
--(id)initWithDetails:(NSString *)name date:(NSString*)date school:(NSString*)School term:(NSString*)Term;
--(void)showInfo;
-
+//properties for NSobject 
 @property (nonatomic, readonly)NSString *devName;
 @property (nonatomic, readonly)NSString *devDate;
 @property (nonatomic, readonly)NSString *devSchool;
 @property (nonatomic, readonly)NSString *devTerm;
+@property (nonatomic, readonly)NSString *devCourse;
 @end

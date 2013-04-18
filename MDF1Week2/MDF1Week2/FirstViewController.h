@@ -12,5 +12,6 @@
 {
     
 }
+//click event
 -(IBAction)onClick:(id)sender;
 @end

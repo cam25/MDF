@@ -38,12 +38,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//back button method
 -(IBAction)onClick:(id)sender
 {
     SecondChildViewController *secondChildView = [[SecondChildViewController alloc]initWithNibName:@"childView2" bundle:nil];
     if (secondChildView != nil) {
-        [self.navigationController pushViewController:secondChildView animated:true];
+        [self.navigationController pushViewController:secondChildView animated:true];//pushes view with nav controller
     }
 }
 

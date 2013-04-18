@@ -37,12 +37,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//method for back button 
 -(IBAction)onClick:(id)sender
 {
     ThirdChildViewController *thirdChildView = [[ThirdChildViewController alloc]initWithNibName:@"ChildView3" bundle:nil];
     if (thirdChildView != nil) {
-        [self.navigationController pushViewController:thirdChildView animated:true];
+        [self.navigationController pushViewController:thirdChildView animated:true];//nav controller
     }
 }
 @end

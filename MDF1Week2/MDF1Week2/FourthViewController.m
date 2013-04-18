@@ -34,6 +34,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//back button method
 -(IBAction)backClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;

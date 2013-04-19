@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface FirstViewController : UIViewController <UITableViewDelegate>
+{
+    IBOutlet UITableView *buisnessTableView;
+    IBOutlet UIButton *editButn;
+    IBOutlet UIButton *doneButn;
+    
+    NSMutableArray *buisnesses;
+    NSMutableArray *locations;
+    
+}
+-(IBAction)editClick:(id)sender;
 @end

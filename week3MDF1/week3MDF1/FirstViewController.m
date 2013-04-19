@@ -138,7 +138,7 @@
         [self presentViewController:locationView animated:true completion:nil];
         
         
-        locationView.info = info;
+        locationView.businessInfo = info;
     }
     
     

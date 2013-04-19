@@ -10,7 +10,8 @@
 
 @interface DataManager : NSObject
 {
-    NSMutableArray *businesses;
+    NSMutableArray *businesses;//will hold my array for passing through all views
+   
 }
 +(DataManager*)sharedDataManager;
 @property (nonatomic,strong)NSMutableArray *businesses;

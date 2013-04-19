@@ -16,6 +16,8 @@
     {
     
         if ((self = [super init])) {
+            
+            //setter
             locationName = name;
             actualLocation = loc;
         }

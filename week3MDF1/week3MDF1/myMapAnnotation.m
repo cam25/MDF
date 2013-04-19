@@ -14,6 +14,8 @@
 -(id)initWithTitle:(NSString*)text coord:(CLLocationCoordinate2D)coord
 {
     if ((self = [super init])) {
+        
+        //setter
         title = text;
         coordinate = coord;
     }

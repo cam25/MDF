@@ -27,6 +27,5 @@
 }
 -(IBAction)editClick:(id)sender;
 @property CLLocationCoordinate2D *coordinates;
-//@property (nonatomic,strong)NSMutableArray *businesses;
-@property (strong,nonatomic) IBOutlet MKMapView *secondMap;
+
 @end

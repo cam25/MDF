@@ -12,24 +12,30 @@
 @interface geoDetailViewController : UIViewController <UITextFieldDelegate>
 {
     IBOutlet MKMapView *mapView;
-    float latitude;
+    
+    float latitude;//holds long/lat for location for 
     float longitude;
+    
+    //textfiled variables
     IBOutlet UITextField *longText;
     IBOutlet UITextField *latText;
+    //business label
     IBOutlet UILabel *businessLabel;
-    NSString *nameOfBusiness;
+    
+    NSString *nameOfBusiness;//holds buisness name for passing from first view to detail.
 }
-
+//properties for lat/long
 @property float latitude;
 @property float longtitude;
 
-@property (strong,nonatomic) NSString *bizString;
 
+//properties for business name and location 
 @property (strong) NSString *buisnessName;
 @property (copy) NSString *nameOfBusiness;
 @property CLLocationCoordinate2D businessLocation;
 @property (strong,nonatomic)UILabel *businessLabel;
-@property(nonatomic,retain) BusinessNfo *info;
+@property(nonatomic,retain) BusinessNfo *businessInfo;//retains the value 
 
+-(IBAction)onClick:(id)sender;
 
 @end

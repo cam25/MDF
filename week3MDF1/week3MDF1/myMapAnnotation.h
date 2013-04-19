@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MapKit/MapKit.h>
+#import <MapKit/MapKit.h>//mapkit
 @interface myMapAnnotation : NSObject <MKAnnotation>
 {
     NSString *title;
     CLLocationCoordinate2D coordinate;
 }
--(id)initWithTitle:(NSString*)text coord:(CLLocationCoordinate2D)coord;
+-(id)initWithTitle:(NSString*)text coord:(CLLocationCoordinate2D)coord;//method for passing name/coords
+//properties
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @end

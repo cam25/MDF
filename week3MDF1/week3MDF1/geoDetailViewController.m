@@ -14,7 +14,7 @@
 @end
 
 @implementation geoDetailViewController
-@synthesize latitude,longtitude,bizString,businessLocation,buisnessName,businessLabel,nameOfBusiness,info;
+@synthesize latitude,longtitude,businessLocation,buisnessName,businessLabel,nameOfBusiness,businessInfo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,27 +25,23 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     //creates a span to do a zoom
     MKCoordinateSpan span;
-    span.latitudeDelta = 20.0f;
-    span.longitudeDelta = 20.0f;
+    span.latitudeDelta = 0.6f;
+    span.longitudeDelta = 0.6f;
     
-    CLLocationCoordinate2D location;
-    
-    location.latitude = 28.55f;
-    location.longitude = -81.33f;
-    
+    //sets location for map viw
     MKCoordinateRegion region;
-    region.center = location;
+    region.center = businessLocation;
     region.span = span;
-    
     mapView.region = region;
     
    
     
-    
+    //sets text field and label to array index.
     businessLabel.text = [NSString stringWithFormat:@"%@",nameOfBusiness];
     latText.text = [NSString stringWithFormat:@"%f",businessLocation.latitude];
     longText.text = [NSString stringWithFormat:@"%f",businessLocation.longitude];
@@ -61,8 +57,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSLog(@"%@",bizString);
 
+}
+
+//set annotations on will appear
+-(void)viewWillAppear:(BOOL)animated
+{
+    myMapAnnotation *mapAnnotations = [[myMapAnnotation alloc]initWithTitle:nameOfBusiness coord:businessLocation];
+    if (mapAnnotations != nil) {
+        [mapView addAnnotation:mapAnnotations];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,5 +74,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(IBAction)onClick:(id)sender
+{
+    UIButton *button = (UIButton *)sender;
+    
+    if (button != nil)
+    {
+        // close the current view and return to the first view
+        [self dismissViewControllerAnimated:true completion:nil];
+    }
+}
+
 
 @end

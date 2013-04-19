@@ -10,12 +10,13 @@
 #import <CoreLocation/CoreLocation.h>
 @interface BusinessNfo : NSObject
 {
-    NSString *locationName;
-    CLLocationCoordinate2D actualLocation;
+    NSString *locationName;//holds my location name 
+    CLLocationCoordinate2D actualLocation;//holds long/lat
 }
 
--(id)initWithTitle:(NSString*)name loc:(CLLocationCoordinate2D)loc;
+-(id)initWithTitle:(NSString*)name loc:(CLLocationCoordinate2D)loc;//method for passing my business name / location to
 
+//properties
 @property (strong,nonatomic) NSString *locationName;
 @property (assign,nonatomic) CLLocationCoordinate2D actualLocation;
 @end

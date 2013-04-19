@@ -7,16 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface FirstViewController : UIViewController <UITableViewDelegate>
+#import "myMapAnnotation.h"
+#import <CoreLocation/CoreLocation.h>
+@interface FirstViewController : UIViewController <UITableViewDelegate , UITableViewDataSource
+>
 {
     IBOutlet UITableView *buisnessTableView;
     IBOutlet UIButton *editButn;
     IBOutlet UIButton *doneButn;
     
-    NSMutableArray *buisnesses;
-    NSMutableArray *locations;
+   // NSMutableArray *businesses;
+
+    
+    myMapAnnotation *title;
+    myMapAnnotation *coord;
+    
+    
     
 }
 -(IBAction)editClick:(id)sender;
+@property CLLocationCoordinate2D *coordinates;
+//@property (nonatomic,strong)NSMutableArray *businesses;
+@property (strong,nonatomic) IBOutlet MKMapView *secondMap;
 @end

@@ -26,6 +26,11 @@
 		11406BCC1720BA0700296DEE /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11406BCA1720BA0700296DEE /* SecondViewController.xib */; };
 		11406BD31720FD4100296DEE /* geoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11406BD21720FD4000296DEE /* geoDetailView.xib */; };
 		11406BD61720FD6D00296DEE /* geoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BD51720FD6C00296DEE /* geoDetailViewController.m */; };
+		11406BD817219D3F00296DEE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11406BD717219D3F00296DEE /* MapKit.framework */; };
+		11406BDB1721B92F00296DEE /* myMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BDA1721B92E00296DEE /* myMapAnnotation.m */; };
+		11406BDE1721CA6200296DEE /* BusinessNfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BDD1721CA6100296DEE /* BusinessNfo.m */; };
+		11406BE01721DB5300296DEE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11406BDF1721DB5300296DEE /* CoreLocation.framework */; };
+		11406BE31721DDBB00296DEE /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BE21721DDBA00296DEE /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +60,14 @@
 		11406BD21720FD4000296DEE /* geoDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = geoDetailView.xib; sourceTree = "<group>"; };
 		11406BD41720FD6A00296DEE /* geoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geoDetailViewController.h; sourceTree = "<group>"; };
 		11406BD51720FD6C00296DEE /* geoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = geoDetailViewController.m; sourceTree = "<group>"; };
+		11406BD717219D3F00296DEE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		11406BD91721B92D00296DEE /* myMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myMapAnnotation.h; sourceTree = "<group>"; };
+		11406BDA1721B92E00296DEE /* myMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myMapAnnotation.m; sourceTree = "<group>"; };
+		11406BDC1721CA6000296DEE /* BusinessNfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessNfo.h; sourceTree = "<group>"; };
+		11406BDD1721CA6100296DEE /* BusinessNfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessNfo.m; sourceTree = "<group>"; };
+		11406BDF1721DB5300296DEE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		11406BE11721DDBA00296DEE /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		11406BE21721DDBA00296DEE /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11406BE01721DB5300296DEE /* CoreLocation.framework in Frameworks */,
+				11406BD817219D3F00296DEE /* MapKit.framework in Frameworks */,
 				11406BA21720BA0700296DEE /* UIKit.framework in Frameworks */,
 				11406BA41720BA0700296DEE /* Foundation.framework in Frameworks */,
 				11406BA61720BA0700296DEE /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +89,8 @@
 		11406B951720BA0700296DEE = {
 			isa = PBXGroup;
 			children = (
+				11406BDF1721DB5300296DEE /* CoreLocation.framework */,
+				11406BD717219D3F00296DEE /* MapKit.framework */,
 				11406BA71720BA0700296DEE /* week3MDF1 */,
 				11406BA01720BA0700296DEE /* Frameworks */,
 				11406B9F1720BA0700296DEE /* Products */,
@@ -117,6 +134,12 @@
 				11406BD21720FD4000296DEE /* geoDetailView.xib */,
 				11406BD41720FD6A00296DEE /* geoDetailViewController.h */,
 				11406BD51720FD6C00296DEE /* geoDetailViewController.m */,
+				11406BD91721B92D00296DEE /* myMapAnnotation.h */,
+				11406BDA1721B92E00296DEE /* myMapAnnotation.m */,
+				11406BDC1721CA6000296DEE /* BusinessNfo.h */,
+				11406BDD1721CA6100296DEE /* BusinessNfo.m */,
+				11406BE11721DDBA00296DEE /* DataManager.h */,
+				11406BE21721DDBA00296DEE /* DataManager.m */,
 			);
 			path = week3MDF1;
 			sourceTree = "<group>";
@@ -212,6 +235,9 @@
 				11406BBB1720BA0700296DEE /* FirstViewController.m in Sources */,
 				11406BC21720BA0700296DEE /* SecondViewController.m in Sources */,
 				11406BD61720FD6D00296DEE /* geoDetailViewController.m in Sources */,
+				11406BDB1721B92F00296DEE /* myMapAnnotation.m in Sources */,
+				11406BDE1721CA6200296DEE /* BusinessNfo.m in Sources */,
+				11406BE31721DDBB00296DEE /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

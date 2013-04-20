@@ -7,25 +7,51 @@
 //
 
 #import "SecondViewController.h"
-
+#import <MapKit/MapKit.h>
+#import "myMapAnnotation.h"
+#import "DataManager.h"
+#import "BusinessNfo.h"
+#import "FirstViewController.h"
 @interface SecondViewController ()
 
 @end
 
 @implementation SecondViewController
-
+@synthesize secondMap,locations;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Second", @"Second");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        //DataManager *dataManager = [DataManager sharedDataManager];
+        //BOOL *dirtyData = dataManager.dirtyBits;
+        dirtyBits = YES;
+        
+        
     }
     return self;
 }
 							
 - (void)viewDidLoad
 {
+    
+    MKCoordinateSpan span;
+    span.latitudeDelta = 15.0f;
+    span.longitudeDelta = 15.0f;
+    
+    CLLocationCoordinate2D location;
+    location.latitude = 38.89f;
+    location.longitude = -77.03f;
+    
+    MKCoordinateRegion region;
+    region.center = location;
+    region.span = span;
+    
+    secondMap.region = region;
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -34,6 +60,40 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    DataManager *dataManager = [DataManager sharedDataManager];
+    NSMutableArray *annotationData = dataManager.businesses;
+    
+    if (dirtyBits == NO) {
+        if ([annotationData count] > 0) {
+            [secondMap removeAnnotations:secondMap.annotations];
+        }
+    }
+    else if (dirtyBits == YES)
+    {
+        dirtyBits = NO;
+    }
+  
+    DataManager *data = [DataManager sharedDataManager];
+    NSMutableArray *mapData = data.businesses;
+    
+    for (int i = 0; i < [mapData count]; i++) {
+        myMapAnnotation *annotations = [[myMapAnnotation alloc] initWithTitle:[[mapData objectAtIndex:i]locationName] coord:[[mapData objectAtIndex:i]actualLocation]];
+        
+        if (annotations != nil) {
+            [secondMap addAnnotation:annotations];
+        }
+        
+    }
+    
+    
+    
+    [super viewWillAppear:animated];
+    
+    
 }
 
 @end

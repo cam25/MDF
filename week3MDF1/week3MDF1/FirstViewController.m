@@ -61,14 +61,14 @@
     
     
     
-    DataManager *manager = [DataManager sharedDataManager];
+    DataManager *manager = [DataManager sharedDataManager];//setting singleton to manager for manipulation
     
     if (manager != nil) {
         
         NSMutableArray *businesses = manager.businesses;
         
         if (businesses != nil) {
-            
+            //adds location/business name to array
             [businesses addObject:business1];
             [businesses addObject:business2];
             [businesses addObject:business3];

@@ -31,6 +31,8 @@
 		11406BDE1721CA6200296DEE /* BusinessNfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BDD1721CA6100296DEE /* BusinessNfo.m */; };
 		11406BE01721DB5300296DEE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11406BDF1721DB5300296DEE /* CoreLocation.framework */; };
 		11406BE31721DDBB00296DEE /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BE21721DDBA00296DEE /* DataManager.m */; };
+		1178177F1725C4CF00316394 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1178177E1725C4CF00316394 /* appIcon.png */; };
+		117817811725C4D800316394 /* appIconRet.png in Resources */ = {isa = PBXBuildFile; fileRef = 117817801725C4D800316394 /* appIconRet.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,10 @@
 		11406BDF1721DB5300296DEE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		11406BE11721DDBA00296DEE /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		11406BE21721DDBA00296DEE /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		1178177E1725C4CF00316394 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		117817801725C4D800316394 /* appIconRet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconRet.png; sourceTree = "<group>"; };
+		117817821725C4E500316394 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		117817841725C4EE00316394 /* appIconRet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconRet.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,8 @@
 		11406B951720BA0700296DEE = {
 			isa = PBXGroup;
 			children = (
+				117817841725C4EE00316394 /* appIconRet.png */,
+				117817821725C4E500316394 /* appIcon.png */,
 				11406BDF1721DB5300296DEE /* CoreLocation.framework */,
 				11406BD717219D3F00296DEE /* MapKit.framework */,
 				11406BA71720BA0700296DEE /* week3MDF1 */,
@@ -118,6 +126,8 @@
 		11406BA71720BA0700296DEE /* week3MDF1 */ = {
 			isa = PBXGroup;
 			children = (
+				117817801725C4D800316394 /* appIconRet.png */,
+				1178177E1725C4CF00316394 /* appIcon.png */,
 				11406BB01720BA0700296DEE /* AppDelegate.h */,
 				11406BB11720BA0700296DEE /* AppDelegate.m */,
 				11406BB91720BA0700296DEE /* FirstViewController.h */,
@@ -220,6 +230,8 @@
 				11406BC91720BA0700296DEE /* FirstViewController.xib in Resources */,
 				11406BCC1720BA0700296DEE /* SecondViewController.xib in Resources */,
 				11406BD31720FD4100296DEE /* geoDetailView.xib in Resources */,
+				1178177F1725C4CF00316394 /* appIcon.png in Resources */,
+				117817811725C4D800316394 /* appIconRet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

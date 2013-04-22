@@ -16,12 +16,15 @@
     
     NSString *locations;
     
-    myMapAnnotation *annotation;
+  
+
+   
     
     BOOL dirtyBits;
     
 }
 @property (nonatomic,strong) IBOutlet MKMapView *secondMap;
 @property (nonatomic, assign)NSString *locations;
+
 
 @end

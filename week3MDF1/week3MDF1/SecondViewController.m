@@ -32,6 +32,8 @@
     }
     return self;
 }
+
+
 							
 - (void)viewDidLoad
 {
@@ -82,18 +84,43 @@
     
     for (int i = 0; i < [mapData count]; i++) {
         myMapAnnotation *annotations = [[myMapAnnotation alloc] initWithTitle:[[mapData objectAtIndex:i]locationName] coord:[[mapData objectAtIndex:i]actualLocation]];
+       
         
         if (annotations != nil) {
             [secondMap addAnnotation:annotations];
-        }
         
+        }
+   
     }
-    
     
     
     [super viewWillAppear:animated];
     
-    
 }
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    MKPinAnnotationView *mapPin = nil;
+    if ([annotation isKindOfClass:[annotation class]])
+    {
+        static NSString *defaultPinID = @"defaultPin";
+        mapPin = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+        if (!mapPin)
+        {
+            mapPin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+            mapPin.draggable = YES;
+            mapPin.animatesDrop = YES;
+            mapPin.canShowCallout = YES;
+            NSLog(@"tem pin");
+            
+        }else
+        {
+            mapPin.annotation = annotation;
+        }
+        
+    }
+    return mapPin;
+}
+
 
 @end

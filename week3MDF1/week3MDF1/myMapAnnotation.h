@@ -15,6 +15,6 @@
 }
 -(id)initWithTitle:(NSString*)text coord:(CLLocationCoordinate2D)coord;//method for passing name/coords
 //properties
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (strong) NSString *title;
+@property (assign) CLLocationCoordinate2D coordinate;
 @end

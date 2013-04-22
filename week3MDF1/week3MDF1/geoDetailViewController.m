@@ -30,8 +30,8 @@
 {
     //creates a span to do a zoom
     MKCoordinateSpan span;
-    span.latitudeDelta = 0.6f;
-    span.longitudeDelta = 0.6f;
+    span.latitudeDelta = 0.06f;
+    span.longitudeDelta = 0.06f;
     
     //sets location for map viw
     MKCoordinateRegion region;

@@ -11,7 +11,7 @@
 #import "BusinessNfo.h"
 @interface geoDetailViewController : UIViewController <UITextFieldDelegate, MKMapViewDelegate>
 {
-    IBOutlet MKMapView *mapView;
+    IBOutlet MKMapView *mapView1;
     
     float latitude;//holds long/lat for location for 
     float longitude;

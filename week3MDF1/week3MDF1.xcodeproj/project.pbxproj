@@ -33,6 +33,8 @@
 		11406BE31721DDBB00296DEE /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BE21721DDBA00296DEE /* DataManager.m */; };
 		1178177F1725C4CF00316394 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1178177E1725C4CF00316394 /* appIcon.png */; };
 		117817811725C4D800316394 /* appIconRet.png in Resources */ = {isa = PBXBuildFile; fileRef = 117817801725C4D800316394 /* appIconRet.png */; };
+		1178180C1725DB1F00316394 /* business.png in Resources */ = {isa = PBXBuildFile; fileRef = 1178180B1725DB1F00316394 /* business.png */; };
+		1178180E1725DBAF00316394 /* business2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1178180D1725DBAF00316394 /* business2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		117817801725C4D800316394 /* appIconRet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconRet.png; sourceTree = "<group>"; };
 		117817821725C4E500316394 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
 		117817841725C4EE00316394 /* appIconRet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconRet.png; sourceTree = "<group>"; };
+		1178180B1725DB1F00316394 /* business.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business.png; sourceTree = "<group>"; };
+		1178180D1725DBAF00316394 /* business2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		11406BA71720BA0700296DEE /* week3MDF1 */ = {
 			isa = PBXGroup;
 			children = (
+				1178180D1725DBAF00316394 /* business2.png */,
+				1178180B1725DB1F00316394 /* business.png */,
 				117817801725C4D800316394 /* appIconRet.png */,
 				1178177E1725C4CF00316394 /* appIcon.png */,
 				11406BB01720BA0700296DEE /* AppDelegate.h */,
@@ -232,6 +238,8 @@
 				11406BD31720FD4100296DEE /* geoDetailView.xib in Resources */,
 				1178177F1725C4CF00316394 /* appIcon.png in Resources */,
 				117817811725C4D800316394 /* appIconRet.png in Resources */,
+				1178180C1725DB1F00316394 /* business.png in Resources */,
+				1178180E1725DBAF00316394 /* business2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

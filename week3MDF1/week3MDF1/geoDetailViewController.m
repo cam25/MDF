@@ -37,7 +37,7 @@
     MKCoordinateRegion region;
     region.center = businessLocation;
     region.span = span;
-    mapView.region = region;
+    mapView1.region = region;
     
    
     
@@ -65,7 +65,7 @@
 {
     myMapAnnotation *mapAnnotations = [[myMapAnnotation alloc]initWithTitle:nameOfBusiness coord:businessLocation];
     if (mapAnnotations != nil) {
-        [mapView addAnnotation:mapAnnotations];
+        [mapView1 addAnnotation:mapAnnotations];
     }
 }
 
@@ -85,5 +85,34 @@
     }
 }
 
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    MKPinAnnotationView *mapPin = nil;
+    if ([annotation isKindOfClass:[annotation class]])
+    {
+        static NSString *defaultPinID = @"defaultPin";
+        mapPin = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+        if (!mapPin)
+        {
+            mapPin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+
+            mapPin.animatesDrop = YES;
+            mapPin.canShowCallout = YES;
+
+            NSLog(@"tem pin");
+            
+            UIImageView *profileIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"business2.png"]];
+            mapPin.leftCalloutAccessoryView = profileIconView;
+            [profileIconView release];
+            
+        }else
+        {
+            mapPin.annotation = annotation;
+        }
+        
+    }
+    return mapPin;
+}
 
 @end

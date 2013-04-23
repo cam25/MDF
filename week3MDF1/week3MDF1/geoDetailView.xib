@@ -61,6 +61,7 @@
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<string key="IBUIText"/>
@@ -97,6 +98,7 @@
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<string key="IBUIText"/>
@@ -215,6 +217,7 @@
 						<string key="NSFrame">{{0, 500}, {320, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -287,14 +290,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mapView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="1037187832"/>
-					</object>
-					<int key="connectionID">44</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">longText</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="150217342"/>
@@ -316,6 +311,22 @@
 						<reference key="destination" ref="7551440"/>
 					</object>
 					<int key="connectionID">76</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mapView1</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1037187832"/>
+					</object>
+					<int key="connectionID">129</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="1037187832"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">126</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -691,7 +702,6 @@
 								<float key="scoringTypeFloat">29</float>
 								<int key="contentType">3</int>
 							</object>
-							<reference ref="1037187832"/>
 							<reference ref="150217342"/>
 							<reference ref="829772150"/>
 							<reference ref="691685967"/>
@@ -699,6 +709,7 @@
 							<reference ref="7551440"/>
 							<reference ref="508331209"/>
 							<reference ref="834932639"/>
+							<reference ref="1037187832"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1099,7 +1110,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">125</int>
+			<int key="maxID">129</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1129,7 +1140,7 @@
 						<string key="businessLabel">UILabel</string>
 						<string key="latText">UITextField</string>
 						<string key="longText">UITextField</string>
-						<string key="mapView">MKMapView</string>
+						<string key="mapView1">MKMapView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="businessLabel">
@@ -1144,8 +1155,8 @@
 							<string key="name">longText</string>
 							<string key="candidateClassName">UITextField</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="mapView">
-							<string key="name">mapView</string>
+						<object class="IBToOneOutletInfo" key="mapView1">
+							<string key="name">mapView1</string>
 							<string key="candidateClassName">MKMapView</string>
 						</object>
 					</dictionary>

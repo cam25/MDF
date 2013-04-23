@@ -108,10 +108,21 @@
         if (!mapPin)
         {
             mapPin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:defaultPinID];
-            mapPin.draggable = YES;
+            
             mapPin.animatesDrop = YES;
             mapPin.canShowCallout = YES;
             NSLog(@"tem pin");
+            
+            UIImageView *profileIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"business2.png"]];
+            mapPin.leftCalloutAccessoryView = profileIconView;
+            [profileIconView release];
+            
+            /*
+            UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            [rightButton setTitle:annotation.title forState:UIControlStateNormal];
+            [rightButton addTarget:self action:@selector(details) forControlEvents:UIControlEventTouchUpInside];
+            mapPin.rightCalloutAccessoryView = rightButton;
+             */
             
         }else
         {

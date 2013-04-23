@@ -12,17 +12,15 @@
 @interface SecondViewController : UIViewController
 
 {
-    IBOutlet MKMapView *secondMap;
+    IBOutlet MKMapView *secondMap;//map
+    
     
     NSString *locations;
-    
-  
 
-   
-    
     BOOL dirtyBits;
     
 }
+//properties
 @property (nonatomic,strong) IBOutlet MKMapView *secondMap;
 @property (nonatomic, assign)NSString *locations;
 

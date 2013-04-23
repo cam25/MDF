@@ -10,8 +10,9 @@
 #import "myMapAnnotation.h"
 #import <CoreLocation/CoreLocation.h>
 @interface FirstViewController : UIViewController <UITableViewDelegate , UITableViewDataSource
->
+>//delegates
 {
+    //outlets
     IBOutlet UITableView *buisnessTableView;
     IBOutlet UIButton *editButn;
     IBOutlet UIButton *doneButn;

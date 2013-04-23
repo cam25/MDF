@@ -70,8 +70,8 @@
     NSMutableArray *annotationData = dataManager.businesses;
     
     if (dirtyBits == NO) {
-        if ([annotationData count] > 0) {
-            [secondMap removeAnnotations:secondMap.annotations];
+        if ([annotationData count] > 0) {//if annotationData is less than 0 
+            [secondMap removeAnnotations:secondMap.annotations];//remove annotation
         }
     }
     else if (dirtyBits == YES)
@@ -82,12 +82,12 @@
     DataManager *data = [DataManager sharedDataManager];
     NSMutableArray *mapData = data.businesses;
     
-    for (int i = 0; i < [mapData count]; i++) {
-        myMapAnnotation *annotations = [[myMapAnnotation alloc] initWithTitle:[[mapData objectAtIndex:i]locationName] coord:[[mapData objectAtIndex:i]actualLocation]];
+    for (int i = 0; i < [mapData count]; i++) {//loops through array of objects
+        myMapAnnotation *annotations = [[myMapAnnotation alloc] initWithTitle:[[mapData objectAtIndex:i]locationName] coord:[[mapData objectAtIndex:i]actualLocation]];//sets object at index of the mapData array with location name and location to annotations variable 
        
         
         if (annotations != nil) {
-            [secondMap addAnnotation:annotations];
+            [secondMap addAnnotation:annotations];//adds annotations
         
         }
    

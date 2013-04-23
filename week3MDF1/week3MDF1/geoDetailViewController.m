@@ -65,7 +65,7 @@
 {
     myMapAnnotation *mapAnnotations = [[myMapAnnotation alloc]initWithTitle:nameOfBusiness coord:businessLocation];
     if (mapAnnotations != nil) {
-        [mapView1 addAnnotation:mapAnnotations];
+        [mapView1 addAnnotation:mapAnnotations];//adds annotations
     }
 }
 

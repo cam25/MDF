@@ -22,10 +22,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
+        self.title = NSLocalizedString(@"Map", @"Map");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
         //DataManager *dataManager = [DataManager sharedDataManager];
         //BOOL *dirtyData = dataManager.dirtyBits;
+        
+        //sets to dirtyBits to bool for manipulation
         dirtyBits = YES;
         
         
@@ -37,6 +39,8 @@
 							
 - (void)viewDidLoad
 {
+    
+    //sets the way the map is displayed 
     
     MKCoordinateSpan span;
     span.latitudeDelta = 15.0f;

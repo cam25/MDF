@@ -59,9 +59,7 @@
     
 
 }
-
-//set annotations on will appear
--(void)viewWillAppear:(BOOL)animated
+-(void)viewDidAppear:(BOOL)animated
 {
     myMapAnnotation *mapAnnotations = [[myMapAnnotation alloc]initWithTitle:nameOfBusiness coord:businessLocation];
     if (mapAnnotations != nil) {
@@ -69,6 +67,13 @@
     }
 }
 
+//set annotations on will appear
+/*
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+}
+*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

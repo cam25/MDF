@@ -8,6 +8,7 @@
 
 #import "DataManager.h"
 
+//singleton
 @implementation DataManager
 @synthesize businesses;
 static DataManager* _sharedDataManager = nil;

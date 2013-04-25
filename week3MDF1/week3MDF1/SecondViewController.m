@@ -112,11 +112,11 @@
         if (!mapPin)
         {
             mapPin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:defaultPinID];
-            
+            //animates pin
             mapPin.animatesDrop = YES;
             mapPin.canShowCallout = YES;
-            NSLog(@"tem pin");
             
+            //sets image in profile
             UIImageView *profileIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"business2.png"]];
             mapPin.leftCalloutAccessoryView = profileIconView;
             [profileIconView release];

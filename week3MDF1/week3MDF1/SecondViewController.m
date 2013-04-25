@@ -27,7 +27,7 @@
         //DataManager *dataManager = [DataManager sharedDataManager];
         //BOOL *dirtyData = dataManager.dirtyBits;
         
-        //sets to dirtyBits to bool for manipulation
+        //BOOL 
         dirtyBits = YES;
         
         

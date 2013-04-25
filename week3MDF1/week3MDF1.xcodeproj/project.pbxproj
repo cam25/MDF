@@ -24,6 +24,17 @@
 		11406BC61720BA0700296DEE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11406BC51720BA0700296DEE /* second@2x.png */; };
 		11406BC91720BA0700296DEE /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11406BC71720BA0700296DEE /* FirstViewController.xib */; };
 		11406BCC1720BA0700296DEE /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11406BCA1720BA0700296DEE /* SecondViewController.xib */; };
+		11406BD31720FD4100296DEE /* geoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11406BD21720FD4000296DEE /* geoDetailView.xib */; };
+		11406BD61720FD6D00296DEE /* geoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BD51720FD6C00296DEE /* geoDetailViewController.m */; };
+		11406BD817219D3F00296DEE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11406BD717219D3F00296DEE /* MapKit.framework */; };
+		11406BDB1721B92F00296DEE /* myMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BDA1721B92E00296DEE /* myMapAnnotation.m */; };
+		11406BDE1721CA6200296DEE /* BusinessNfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BDD1721CA6100296DEE /* BusinessNfo.m */; };
+		11406BE01721DB5300296DEE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11406BDF1721DB5300296DEE /* CoreLocation.framework */; };
+		11406BE31721DDBB00296DEE /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11406BE21721DDBA00296DEE /* DataManager.m */; };
+		1178177F1725C4CF00316394 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1178177E1725C4CF00316394 /* appIcon.png */; };
+		117817811725C4D800316394 /* appIconRet.png in Resources */ = {isa = PBXBuildFile; fileRef = 117817801725C4D800316394 /* appIconRet.png */; };
+		1178180C1725DB1F00316394 /* business.png in Resources */ = {isa = PBXBuildFile; fileRef = 1178180B1725DB1F00316394 /* business.png */; };
+		1178180E1725DBAF00316394 /* business2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1178180D1725DBAF00316394 /* business2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +61,23 @@
 		11406BC51720BA0700296DEE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		11406BC81720BA0700296DEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		11406BCB1720BA0700296DEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		11406BD21720FD4000296DEE /* geoDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = geoDetailView.xib; sourceTree = "<group>"; };
+		11406BD41720FD6A00296DEE /* geoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geoDetailViewController.h; sourceTree = "<group>"; };
+		11406BD51720FD6C00296DEE /* geoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = geoDetailViewController.m; sourceTree = "<group>"; };
+		11406BD717219D3F00296DEE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		11406BD91721B92D00296DEE /* myMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myMapAnnotation.h; sourceTree = "<group>"; };
+		11406BDA1721B92E00296DEE /* myMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myMapAnnotation.m; sourceTree = "<group>"; };
+		11406BDC1721CA6000296DEE /* BusinessNfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessNfo.h; sourceTree = "<group>"; };
+		11406BDD1721CA6100296DEE /* BusinessNfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessNfo.m; sourceTree = "<group>"; };
+		11406BDF1721DB5300296DEE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		11406BE11721DDBA00296DEE /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		11406BE21721DDBA00296DEE /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		1178177E1725C4CF00316394 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		117817801725C4D800316394 /* appIconRet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconRet.png; sourceTree = "<group>"; };
+		117817821725C4E500316394 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		117817841725C4EE00316394 /* appIconRet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconRet.png; sourceTree = "<group>"; };
+		1178180B1725DB1F00316394 /* business.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business.png; sourceTree = "<group>"; };
+		1178180D1725DBAF00316394 /* business2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11406BE01721DB5300296DEE /* CoreLocation.framework in Frameworks */,
+				11406BD817219D3F00296DEE /* MapKit.framework in Frameworks */,
 				11406BA21720BA0700296DEE /* UIKit.framework in Frameworks */,
 				11406BA41720BA0700296DEE /* Foundation.framework in Frameworks */,
 				11406BA61720BA0700296DEE /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +99,10 @@
 		11406B951720BA0700296DEE = {
 			isa = PBXGroup;
 			children = (
+				117817841725C4EE00316394 /* appIconRet.png */,
+				117817821725C4E500316394 /* appIcon.png */,
+				11406BDF1721DB5300296DEE /* CoreLocation.framework */,
+				11406BD717219D3F00296DEE /* MapKit.framework */,
 				11406BA71720BA0700296DEE /* week3MDF1 */,
 				11406BA01720BA0700296DEE /* Frameworks */,
 				11406B9F1720BA0700296DEE /* Products */,
@@ -96,6 +130,10 @@
 		11406BA71720BA0700296DEE /* week3MDF1 */ = {
 			isa = PBXGroup;
 			children = (
+				1178180D1725DBAF00316394 /* business2.png */,
+				1178180B1725DB1F00316394 /* business.png */,
+				117817801725C4D800316394 /* appIconRet.png */,
+				1178177E1725C4CF00316394 /* appIcon.png */,
 				11406BB01720BA0700296DEE /* AppDelegate.h */,
 				11406BB11720BA0700296DEE /* AppDelegate.m */,
 				11406BB91720BA0700296DEE /* FirstViewController.h */,
@@ -109,6 +147,15 @@
 				11406BC71720BA0700296DEE /* FirstViewController.xib */,
 				11406BCA1720BA0700296DEE /* SecondViewController.xib */,
 				11406BA81720BA0700296DEE /* Supporting Files */,
+				11406BD21720FD4000296DEE /* geoDetailView.xib */,
+				11406BD41720FD6A00296DEE /* geoDetailViewController.h */,
+				11406BD51720FD6C00296DEE /* geoDetailViewController.m */,
+				11406BD91721B92D00296DEE /* myMapAnnotation.h */,
+				11406BDA1721B92E00296DEE /* myMapAnnotation.m */,
+				11406BDC1721CA6000296DEE /* BusinessNfo.h */,
+				11406BDD1721CA6100296DEE /* BusinessNfo.m */,
+				11406BE11721DDBA00296DEE /* DataManager.h */,
+				11406BE21721DDBA00296DEE /* DataManager.m */,
 			);
 			path = week3MDF1;
 			sourceTree = "<group>";
@@ -188,6 +235,11 @@
 				11406BC61720BA0700296DEE /* second@2x.png in Resources */,
 				11406BC91720BA0700296DEE /* FirstViewController.xib in Resources */,
 				11406BCC1720BA0700296DEE /* SecondViewController.xib in Resources */,
+				11406BD31720FD4100296DEE /* geoDetailView.xib in Resources */,
+				1178177F1725C4CF00316394 /* appIcon.png in Resources */,
+				117817811725C4D800316394 /* appIconRet.png in Resources */,
+				1178180C1725DB1F00316394 /* business.png in Resources */,
+				1178180E1725DBAF00316394 /* business2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +254,10 @@
 				11406BB21720BA0700296DEE /* AppDelegate.m in Sources */,
 				11406BBB1720BA0700296DEE /* FirstViewController.m in Sources */,
 				11406BC21720BA0700296DEE /* SecondViewController.m in Sources */,
+				11406BD61720FD6D00296DEE /* geoDetailViewController.m in Sources */,
+				11406BDB1721B92F00296DEE /* myMapAnnotation.m in Sources */,
+				11406BDE1721CA6200296DEE /* BusinessNfo.m in Sources */,
+				11406BE31721DDBB00296DEE /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +386,7 @@
 				11406BD11720BA0700296DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

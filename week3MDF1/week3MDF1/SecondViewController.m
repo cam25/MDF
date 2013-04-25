@@ -74,7 +74,7 @@
     NSMutableArray *annotationData = dataManager.businesses;
     
     if (dirtyBits == NO) {
-        if ([annotationData count] > 0) {//if annotationData is less than 0 
+        if ([annotationData count] > 0) {//if annotationData is greater than 0 
             [secondMap removeAnnotations:secondMap.annotations];//remove annotation
         }
     }

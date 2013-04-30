@@ -131,15 +131,16 @@
                 NSLog(@"%@",weather);
             }
         }
-    else if ([elementName isEqualToString:@"yweather"])
+    if ([elementName isEqualToString:@"yweather:units"])
     {
+        /*
         NSString *locationText = [attributeDict valueForKey:@"text"];
         NSString *locationTemp = [attributeDict valueForKey:@"temp"];
         NSString *locationDate = [attributeDict valueForKey:@"date"];
         
-      
+      */
         
-        
+       
     }
     
     

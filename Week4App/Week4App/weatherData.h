@@ -14,5 +14,5 @@
     NSString *temp;
     NSString *date;
 }
--(id)initwithName2:(NSString*)text temp:(NSString*)temp date:(NSString*)date;
+//-(id)initwithName2:(NSString*)text temp:(NSString*)temp date:(NSString*)date;
 @end

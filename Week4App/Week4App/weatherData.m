@@ -10,11 +10,6 @@
 
 @implementation weatherData
 
--(id)initwithName2:(NSString *)text temp:(NSString *)temp date:(NSString *)date
-{
-    if ((self = [super init])) {
-      
-    }
-    return self;
-}
+//-(id)initwithName2:(NSString *)text temp:(NSString *)temp date:(NSString *)date
+
 @end

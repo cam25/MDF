@@ -154,7 +154,7 @@
         }
         
     }
-        else if ([elementName isEqualToString:@"yweather:location"])
+       if ([elementName isEqualToString:@"yweather:location"])
             
         {
             
@@ -186,15 +186,8 @@
        
     }
     
-    DataManager *data = [DataManager sharedDataManager];
-    NSMutableArray *mapData = data.myArray;
-    
-    for (int i = 0; i < [mapData count]; i++) {//loops through array of objects
-        NSLog(@"%d",mapData.count);
-                                  
-                               
-        
-    }
+
+  
     
     
 }
@@ -253,6 +246,7 @@
         
     }
     cell.textLabel.text = [[weather objectAtIndex:indexPath.row]city];
+   
     
     
     

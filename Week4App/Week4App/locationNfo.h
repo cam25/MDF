@@ -13,10 +13,16 @@
     NSString *city;
     NSString *state;
     NSString *country;
+    NSMutableArray *urlz;
+    
 
     
     
 }
+@property NSString *city;
+@property NSString *state;
+@property NSString *country;
 -(id)initWithName:(NSString*)locationCity locationState:(NSString*)locationState country:(NSString*)locationCountry;
+-(id)initWithName2:(NSString*)url;
 //-(id)initwithName2:(NSString*)text temp:(NSString*)temp date:(NSString*)date;
 @end

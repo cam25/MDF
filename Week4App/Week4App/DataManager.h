@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface DataManager : NSObject
+{
+    NSMutableArray *myArray;
+}
+@property NSMutableArray *myArray;
 
+
++(DataManager*)sharedDataManager;
 @end

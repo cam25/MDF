@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "locationNfo.h"
 #import "weatherData.h"
+#import "DataManager.h"
 @interface FirstViewController ()
 
 @end
@@ -31,6 +32,40 @@
     numItems = 0;
     
     weather = [[NSMutableArray alloc]init];
+    
+    locationNfo *location1 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2502265"];
+    locationNfo *location2 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2436202&u=cl"];
+    locationNfo *location3 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2471217&u=cl"];
+    locationNfo *location4 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=56747312&u=cl"];
+    locationNfo *location5 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2391279&u=cl"];
+    locationNfo *location6 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2367105&u=cl"];
+    locationNfo *location7 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=12590119&u=cl"];
+    locationNfo *location8 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2490383&u=cl"];
+    locationNfo *location9 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2379574&u=cl"];
+    locationNfo *location10 = [[locationNfo alloc]initWithName2:@"http://weather.yahooapis.com/forecastrss?w=2507854&u=cl"];
+
+    DataManager *manager = [DataManager sharedDataManager];
+    if (manager != nil) {
+        NSMutableArray *myArray = manager.myArray;
+        
+        if (myArray != nil) {
+            [myArray addObject:location1];
+            [myArray addObject:location2];
+            [myArray addObject:location3];
+            [myArray addObject:location4];
+            [myArray addObject:location5];
+            [myArray addObject:location6];
+            [myArray addObject:location7];
+            [myArray addObject:location8];
+            [myArray addObject:location9];
+            [myArray addObject:location10];
+            
+            
+        }
+    }
+    
+
+    
     NSData *xmlData = [self GetfileDataFromFile:@"index.xml"];
     
     NSXMLParser *parser = [[NSXMLParser alloc]initWithData:xmlData];
@@ -41,8 +76,9 @@
         [parser parse];
     }
     
+  
     
-    url = [[NSURL alloc]initWithString:@"http://weather.yahooapis.com/forecastrss?w=2442047&u=cl"];
+    url = [[NSURL alloc]initWithString:@"http://weather.yahooapis.com/forecastrss?w=2436202&u=cl"];
     request = [[NSURLRequest alloc] initWithURL:url];
     
     if (request != nil) {
@@ -51,6 +87,8 @@
         
         requestData = [NSMutableData data];
     }
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -103,7 +141,9 @@
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-    //parsing 
+    //parsing
+
+ 
     if ([elementName isEqualToString:@"rss"]) {
         NSString *xmlDetails = [attributeDict valueForKey:@"xmlns:yweather"];
         
@@ -117,6 +157,8 @@
         else if ([elementName isEqualToString:@"yweather:location"])
             
         {
+            
+           
             NSString *locationCity = [attributeDict valueForKey:@"city"];
             NSString *locationState = [attributeDict valueForKey:@"region"];
             NSString *locationCountry = [attributeDict valueForKey:@"country"];
@@ -127,6 +169,7 @@
             locationNfo *item = [[locationNfo alloc]initWithName:locationCity locationState:locationState country:locationCountry];
             
             if (item != nil) {
+       
                 [weather addObject:item];
                 NSLog(@"%@",weather);
             }
@@ -143,7 +186,29 @@
        
     }
     
+    DataManager *data = [DataManager sharedDataManager];
+    NSMutableArray *mapData = data.myArray;
     
+    for (int i = 0; i < [mapData count]; i++) {//loops through array of objects
+        NSLog(@"%d",mapData.count);
+                                  
+                               
+        
+    }
+    
+    
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+    
+    
+    
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+    
+   
 }
 
 -(NSData*)GetfileDataFromFile:(NSString*)filename
@@ -173,12 +238,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
     static NSString *cellID = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil) {
@@ -186,6 +252,9 @@
         
         
     }
+    cell.textLabel.text = [[weather objectAtIndex:indexPath.row]city];
+    
+    
     
    
     return cell;

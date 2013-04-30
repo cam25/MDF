@@ -10,4 +10,24 @@
 
 @implementation DataManager
 
+@synthesize myArray;
+
+
+static DataManager* _sharedDataManager = nil;
+
++(DataManager*)sharedDataManager
+{
+    if (!_sharedDataManager)
+    {
+        _sharedDataManager = [[self alloc] init];
+    }
+    return _sharedDataManager;
+}
+-(id)init
+{
+    if ((self = [super init])) {
+        myArray = [[NSMutableArray alloc]init];
+    }
+    return  self;
+}
 @end

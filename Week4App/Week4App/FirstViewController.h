@@ -18,6 +18,7 @@
     NSURLConnection *urlConnection;
     NSMutableData *requestData;
     NSMutableArray *weather;
+    NSString *nameStr;
     
 }
 -(IBAction)onClick:(id)sender;

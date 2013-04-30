@@ -8,7 +8,10 @@
 
 #import "locationNfo.h"
 
+
 @implementation locationNfo
+@synthesize city,country,state;
+
 -(id)initWithName:(NSString*)locationCity locationState:(NSString*)locationState country:(NSString *)locationCountry
 {
     if ((self = [super init])) {
@@ -18,7 +21,14 @@
     }
     return self;
 }
-
+-(id)initWithName2:(NSString *)url
+{
+    if ((self = [super init])) {
+        
+        urlz = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
 
 
 @end

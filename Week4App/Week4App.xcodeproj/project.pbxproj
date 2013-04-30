@@ -24,6 +24,11 @@
 		11FDB6BE172D96D900744641 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11FDB6BD172D96D900744641 /* second@2x.png */; };
 		11FDB6C1172D96D900744641 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11FDB6BF172D96D900744641 /* FirstViewController.xib */; };
 		11FDB6C4172D96D900744641 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11FDB6C2172D96D900744641 /* SecondViewController.xib */; };
+		11FDB6CB172EE7A100744641 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11FDB6CA172EE7A100744641 /* DetailView.xib */; };
+		11FDB6CE172EE7D000744641 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FDB6CD172EE7D000744641 /* DetailViewController.m */; };
+		11FDB6D1172EE88D00744641 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FDB6D0172EE88D00744641 /* DataManager.m */; };
+		11FDB6D4172F1AB300744641 /* locationNfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FDB6D3172F1AB200744641 /* locationNfo.m */; };
+		11FDB6D717300C9B00744641 /* weatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FDB6D617300C9B00744641 /* weatherData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,15 @@
 		11FDB6BD172D96D900744641 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		11FDB6C0172D96D900744641 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		11FDB6C3172D96D900744641 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		11FDB6CA172EE7A100744641 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		11FDB6CC172EE7D000744641 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		11FDB6CD172EE7D000744641 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		11FDB6CF172EE88D00744641 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		11FDB6D0172EE88D00744641 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		11FDB6D2172F1AB200744641 /* locationNfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locationNfo.h; sourceTree = "<group>"; };
+		11FDB6D3172F1AB200744641 /* locationNfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locationNfo.m; sourceTree = "<group>"; };
+		11FDB6D517300C9A00744641 /* weatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weatherData.h; sourceTree = "<group>"; };
+		11FDB6D617300C9B00744641 /* weatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weatherData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,15 @@
 				11FDB6BF172D96D900744641 /* FirstViewController.xib */,
 				11FDB6C2172D96D900744641 /* SecondViewController.xib */,
 				11FDB6A0172D96D900744641 /* Supporting Files */,
+				11FDB6CA172EE7A100744641 /* DetailView.xib */,
+				11FDB6CC172EE7D000744641 /* DetailViewController.h */,
+				11FDB6CD172EE7D000744641 /* DetailViewController.m */,
+				11FDB6CF172EE88D00744641 /* DataManager.h */,
+				11FDB6D0172EE88D00744641 /* DataManager.m */,
+				11FDB6D2172F1AB200744641 /* locationNfo.h */,
+				11FDB6D3172F1AB200744641 /* locationNfo.m */,
+				11FDB6D517300C9A00744641 /* weatherData.h */,
+				11FDB6D617300C9B00744641 /* weatherData.m */,
 			);
 			path = Week4App;
 			sourceTree = "<group>";
@@ -188,6 +211,7 @@
 				11FDB6BE172D96D900744641 /* second@2x.png in Resources */,
 				11FDB6C1172D96D900744641 /* FirstViewController.xib in Resources */,
 				11FDB6C4172D96D900744641 /* SecondViewController.xib in Resources */,
+				11FDB6CB172EE7A100744641 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +226,10 @@
 				11FDB6AA172D96D900744641 /* AppDelegate.m in Sources */,
 				11FDB6B3172D96D900744641 /* FirstViewController.m in Sources */,
 				11FDB6BA172D96D900744641 /* SecondViewController.m in Sources */,
+				11FDB6CE172EE7D000744641 /* DetailViewController.m in Sources */,
+				11FDB6D1172EE88D00744641 /* DataManager.m in Sources */,
+				11FDB6D4172F1AB300744641 /* locationNfo.m in Sources */,
+				11FDB6D717300C9B00744641 /* weatherData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +320,7 @@
 		11FDB6C8172D96D900744641 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Week4App/Week4App-Prefix.pch";
 				INFOPLIST_FILE = "Week4App/Week4App-Info.plist";
@@ -303,6 +332,7 @@
 		11FDB6C9172D96D900744641 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Week4App/Week4App-Prefix.pch";
 				INFOPLIST_FILE = "Week4App/Week4App-Info.plist";
@@ -330,6 +360,7 @@
 				11FDB6C9172D96D900744641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface weatherData : NSObject
-{
-    NSString *text;
-    NSString *temp;
-    NSString *date;
-}
+
+//set properties for weatherData
+    @property(strong) NSString *city;
+    @property(strong) NSString *state;
+    @property(strong) NSString *temp;
+@property(strong) NSString *date;
+
 //-(id)initwithName2:(NSString*)text temp:(NSString*)temp date:(NSString*)date;
 @end

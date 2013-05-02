@@ -9,13 +9,15 @@
 #import "DetailViewController.h"
 #import "FirstViewController.h"
 #import "locationNfo.h"
+#import "weatherData.h"
+#import "SecondViewController.h"
 
 @interface DetailViewController ()
 
 @end
 
 @implementation DetailViewController
-@synthesize locationInfo,weatherData,detailTextView,elementValue,parseController,weather;
+@synthesize locationInfo,detailTextView,elementValue,parseController,weather,requestString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,38 +28,27 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    //method call - passing the url from the location object 
+    [self getXML:_location.urlz];
+    weather = [[NSMutableArray alloc]init];
+}
+
 - (void)viewDidLoad
 {
     
     numItems = 0;
-    
-   
-    
-   
-    
-     
-    
-  
-     
-    
     NSLog(@"%@",_location);
     
- [self getXML:_location.urlz];
-    [self getXML:_location.city];
-    [self getXML:_location.text];
-    for (int i=0; i < [weather count]; i++){
-        [self getXML:[weather objectAtIndex:i]];
-        NSLog(@"%@",[weather objectAtIndex:i]);
-    }
-   
-    
-    NSString *newInfo = [NSString stringWithFormat:@"%@", _location.temp ];
-    detailTextView.text = newInfo;
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
 }
+
+//custom parser method which allows the xml to recieve a string and holds the value of _location.urlz
 -(void)getXML:(NSString*)xml
-{
+{   
     url = [[NSURL alloc]initWithString:xml];
     request = [[NSURLRequest alloc] initWithURL:url];
     NSLog(@"%@",xml);
@@ -76,11 +67,20 @@
     if (data != nil) {
         if (requestData) {
             [requestData appendData:data];
+            
         }else {
             requestData = [data mutableCopy];
         }
     }
-    
+    /*
+    weatherData *w = [[weatherData alloc]init];
+    [w setCity:locationCity];
+    [w setDate:locationDate];
+    [w setTemp:locationTemp];
+    [w setState:locationState];
+    [weather addObject:w];
+    NSLog(@"Count: %i",weather.count);
+     */
 }
 
 
@@ -89,9 +89,9 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     
-   
     
-    NSString *requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
+    
+    requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
     if (requestString != nil) {
         
         //get the path to the application documents directory
@@ -107,7 +107,7 @@
         }
         // NSLog(@"%@",requestString);
     }
-     NSData *xmlData = [self GetfileDataFromFile:@"index.xml"];
+    NSData *xmlData = [self GetfileDataFromFile:@"index.xml"];
     
     NSXMLParser *parser = [[NSXMLParser alloc]initWithData:xmlData];
     
@@ -121,12 +121,8 @@
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
     //parsing
-    
-    elementValue = [[NSMutableString alloc] init];
-     weather = [[NSMutableArray alloc]init];
-    
-    
-    
+
+    //if elementName is equal to the key passed in 
     if ([elementName isEqualToString:@"rss"]) {
         NSString *xmlDetails = [attributeDict valueForKey:@"xmlns:yweather"];
         
@@ -141,52 +137,43 @@
         
     {
         
+        //sets strings of locationCity/locationState to hold the attribute of parsed data from xml to pass to detail view
+        locationCity = [attributeDict valueForKey:@"city"];
+        locationState = [attributeDict valueForKey:@"region"];
         
-        NSString *locationCity = [attributeDict valueForKey:@"city"];
-        NSString *locationState = [attributeDict valueForKey:@"region"];
-        NSString *locationCountry = [attributeDict valueForKey:@"country"];
-        NSString *API = [attributeDict valueForKey:@"link"];
+        //sets label to parsed data
+        cityLabel.text = locationCity;
+        stateLabel.text = locationState;
         
+        NSLog(@"city: %@, region: %@",locationCity,locationState);
         
-        //NSLog(@"%@",locationState);
-        locationNfo *item = [[locationNfo alloc]initWithName:locationCity locationState:locationState country:locationCountry urlz:API];
-        
-        if (item != nil) {
-            
-            [weather addObject:item];
-            
-           // NSLog(@"%@",weather);
-        }
     }
     if ([elementName isEqualToString:@"yweather:condition"])
     {
         
-         NSString *locationText = [attributeDict valueForKey:@"text"];
-         NSString *locationTemp = [attributeDict valueForKey:@"temp"];
-        NSString *locationCode = [attributeDict valueForKey:@"code"];
-         NSString *locationDate = [attributeDict valueForKey:@"date"];
+        locationTemp = [attributeDict valueForKey:@"temp"];
+        locationDate = [attributeDict valueForKey:@"date"];
+        locationCondtion = [attributeDict valueForKey:@"text"];
         
-        locationNfo *add = [[locationNfo alloc]initWithName:locationText locationState:locationTemp country:locationCode urlz:locationDate];
+        dateLabel.text = locationDate;
+        tempLabel.text = locationTemp;
+        conditionLabel.text = locationCondtion;
         
-        [weather addObject:add];
-      
-        
-   
-        NSLog(@"%d",weather.count);
+        NSLog(@"temp: %@, date: %@, condition: %@",locationTemp, locationDate,locationCondtion);
         
     }
-    
-    
-    
-    
-    
+
+
+
+
+
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
-
-}
     
+}
+
 
 
 
@@ -228,6 +215,11 @@
         // dismiss the details view and return to the table view
         [self dismissViewControllerAnimated:true completion:nil];
     }
+}
+
+- (NSString *)xmlDataString
+{
+    return requestString;
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "weatherData.h"
 
 @implementation weatherData
+@synthesize city,state,temp,date;
 
 //-(id)initwithName2:(NSString *)text temp:(NSString *)temp date:(NSString *)date
 

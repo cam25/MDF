@@ -10,6 +10,7 @@
 
 @interface locationNfo : NSObject
 {
+    //strings for holding data to pass
     NSString *city;
     NSString *state;
     NSString *country;
@@ -24,6 +25,8 @@
     
     
 }
+
+//properties
 @property NSString *city;
 @property NSString *state;
 @property NSString *country;
@@ -33,7 +36,7 @@
 @property NSString *temp;
 @property NSString *date;
 -(id)initWithName:(NSString *)locationCity locationState:(NSString *)locationState country:(NSString *)locationCountry urlz:(NSString*)API;
--(id)initWithName2:(NSString*)locationTemp locationText:(NSString *)locationText locationDate:(NSString *)locationDate locationCode:(NSString *)locationCode;
+//-(id)initWithName2:(NSString*)locationTemp locationText:(NSString *)locationText locationDate:(NSString *)locationDate locationCode:(NSString *)locationCode;
 //-(id)initWithName2:(NSString*)url;
 //-(id)initwithName2:(NSString*)text temp:(NSString*)temp date:(NSString*)date;
 @end

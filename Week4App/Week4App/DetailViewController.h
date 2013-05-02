@@ -8,25 +8,47 @@
 
 #import <UIKit/UIKit.h>
 #import "locationNfo.h"
-@interface DetailViewController : UIViewController <NSURLConnectionDataDelegate, NSXMLParserDelegate>
+#import "SecondViewController.h"
+@interface DetailViewController : UIViewController <NSURLConnectionDataDelegate, NSXMLParserDelegate,xmlViewer>
 {
     
     NSString *locationInfo;
-    NSString *weatherData;
-    IBOutlet UITextView *detailTextView;
+    //NSMutableDictionary *weatherDict;
+    
+    //outlets
+    IBOutlet UILabel *cityLabel;
+    IBOutlet UILabel *stateLabel;
+    IBOutlet UILabel *tempLabel;
+    IBOutlet UILabel *dateLabel;
     IBOutlet UILabel *locationLabel;
+    IBOutlet UILabel *conditionLabel;
+    
+    //strings for holding parsed data
+    NSString *locationCondtion;
+    NSString *locationTemp;
+    NSString *locationDate;
+    NSString *locationCity;
+    
+    //url data
     NSURLRequest *request;
+    NSString *locationState;
     NSURL *url;
     NSURLConnection *urlConnection;
     NSMutableData *requestData;
-  
-     NSInteger numItems;
-     NSMutableArray *weather;
+    NSString *requestString;
+    
+    NSInteger numItems;
+    NSMutableArray *weather;
     
     
 }
+//parser method 
 -(void)getXML:(NSString*)xml;
+
+
 -(IBAction)back:(id)sender;
+//properties
+@property NSString *requestString;
 @property (strong) NSString *locationInfo;
 @property (strong) NSString *weatherData;
 @property NSMutableArray *weather;

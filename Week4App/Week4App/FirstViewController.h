@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SecondViewController.h"
 @interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-   
+   //tableview
     IBOutlet UITableView *infoTable;
    
+    //array of locations
     NSMutableArray *locations;
    
+    
     NSString *areaString;
-    NSMutableArray *cities;
+    //NSMutableArray *cities;
 
 }
 @property NSString *areaString;

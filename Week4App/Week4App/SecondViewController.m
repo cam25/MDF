@@ -13,6 +13,7 @@
 @end
 
 @implementation SecondViewController
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,9 +24,21 @@
     }
     return self;
 }
+- (void)viewDidAppear:(BOOL)animated
+{
+    // fetch the request string from the first tab
+  
+    
+    [super viewDidAppear:true];
+}
 							
 - (void)viewDidLoad
 {
+    
+    NSString *rawText = [delegate xmlDataString];
+    
+    // set the textView text to the fetched in request string
+    xmlView.text = rawText;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

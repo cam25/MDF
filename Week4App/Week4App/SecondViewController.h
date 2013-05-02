@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol xmlViewer <NSObject>
+
+@required
+- (NSString *)xmlDataString;
+
+@end
+
 @interface SecondViewController : UIViewController
 
+{
+    IBOutlet UITextView *xmlView;
+    id<xmlViewer> delegate;
+}
+@property (strong) id<xmlViewer> delegate;
 @end

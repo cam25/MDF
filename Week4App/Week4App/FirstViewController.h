@@ -8,18 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDataDelegate, NSXMLParserDelegate>
+@interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    NSInteger numItems;
+   
     IBOutlet UITableView *infoTable;
+   
     NSMutableArray *locations;
-    NSURLRequest *request;
-    NSURL *url;
-    NSURLConnection *urlConnection;
-    NSMutableData *requestData;
-    NSMutableArray *weather;
-    NSString *nameStr;
-    
+   
+    NSString *areaString;
+    NSMutableArray *cities;
+
 }
+@property NSString *areaString;
 -(IBAction)onClick:(id)sender;
+
 @end

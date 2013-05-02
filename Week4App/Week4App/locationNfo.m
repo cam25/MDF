@@ -10,17 +10,36 @@
 
 
 @implementation locationNfo
-@synthesize city,country,state;
+@synthesize city,country,state,urlz,text,date,code,temp;
 
--(id)initWithName:(NSString*)locationCity locationState:(NSString*)locationState country:(NSString *)locationCountry
+-(id)initWithName:(NSString *)locationCity locationState:(NSString *)locationState country:(NSString *)locationCountry urlz:(NSString *)API
 {
     if ((self = [super init])) {
         city = locationCity;
         state = locationState;
         country = locationCountry;
+        urlz = API;
+       
+        temp = locationCity;
+        text = locationState;
+        date = locationCountry;
+    
+        
+       
     }
     return self;
 }
+-(id)initWithName2:(NSString*)locationTemp locationText:(NSString *)locationText locationDate:(NSString *)locationDate locationCode:(NSString *)locationCode
+{
+    if ((self = [super init])) {
+       
+        
+        
+    }
+    return self;
+}
+
+/*
 -(id)initWithName2:(NSString *)url
 {
     if ((self = [super init])) {
@@ -29,6 +48,6 @@
     }
     return self;
 }
-
+*/
 
 @end

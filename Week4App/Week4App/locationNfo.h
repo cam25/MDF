@@ -13,8 +13,13 @@
     NSString *city;
     NSString *state;
     NSString *country;
-    NSMutableArray *urlz;
+    NSString *urlz;
+    NSString *text;
+    NSString *code;
+    NSString *temp;
+    NSString *date;
     
+
 
     
     
@@ -22,7 +27,13 @@
 @property NSString *city;
 @property NSString *state;
 @property NSString *country;
--(id)initWithName:(NSString*)locationCity locationState:(NSString*)locationState country:(NSString*)locationCountry;
--(id)initWithName2:(NSString*)url;
+@property NSString *urlz;
+@property NSString *text;
+@property NSString *code;
+@property NSString *temp;
+@property NSString *date;
+-(id)initWithName:(NSString *)locationCity locationState:(NSString *)locationState country:(NSString *)locationCountry urlz:(NSString*)API;
+-(id)initWithName2:(NSString*)locationTemp locationText:(NSString *)locationText locationDate:(NSString *)locationDate locationCode:(NSString *)locationCode;
+//-(id)initWithName2:(NSString*)url;
 //-(id)initwithName2:(NSString*)text temp:(NSString*)temp date:(NSString*)date;
 @end

@@ -29,6 +29,7 @@
 -(IBAction)back:(id)sender;
 @property (strong) NSString *locationInfo;
 @property (strong) NSString *weatherData;
+@property NSMutableArray *weather;
 @property BOOL parseController;
 @property NSMutableString *elementValue;
 @property (strong) IBOutlet UITextView *detailTextView;

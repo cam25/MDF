@@ -162,9 +162,9 @@
         
         locationNfo *info = [locations objectAtIndex:indexPath.row];
         detailView.location = info;
-       // detailView.locationInfo = [locations objectAtIndex:indexPath.row];
+        detailView.locationInfo = [locations objectAtIndex:indexPath.row];
        
-        //detailView.detailTextView = [NSString stringWithFormat:@"%@",[weather objectAtIndex:indexPath.row];
+        
       
          [self presentViewController:detailView animated:true completion:nil];
     }

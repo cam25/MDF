@@ -15,7 +15,7 @@
 @end
 
 @implementation DetailViewController
-@synthesize locationInfo,weatherData,detailTextView,elementValue,parseController;
+@synthesize locationInfo,weatherData,detailTextView,elementValue,parseController,weather;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,14 +31,13 @@
     
     numItems = 0;
     
-    weather = [[NSMutableArray alloc]init];
+   
     
    
     
      
     
-    NSString *newInfo = [NSString stringWithFormat:@"%@ %@ %@",_location.city,_location.state,_location.country];
-    detailTextView.text = newInfo;
+  
      
     
     NSLog(@"%@",_location);
@@ -46,7 +45,14 @@
  [self getXML:_location.urlz];
     [self getXML:_location.city];
     [self getXML:_location.text];
+    for (int i=0; i < [weather count]; i++){
+        [self getXML:[weather objectAtIndex:i]];
+        NSLog(@"%@",[weather objectAtIndex:i]);
+    }
+   
     
+    NSString *newInfo = [NSString stringWithFormat:@"%@", _location.temp ];
+    detailTextView.text = newInfo;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -117,6 +123,7 @@
     //parsing
     
     elementValue = [[NSMutableString alloc] init];
+     weather = [[NSMutableArray alloc]init];
     
     
     
@@ -162,9 +169,10 @@
         locationNfo *add = [[locationNfo alloc]initWithName:locationText locationState:locationTemp country:locationCode urlz:locationDate];
         
         [weather addObject:add];
-        NSLog(@"%@",weather);
+      
         
-       
+   
+        NSLog(@"%d",weather.count);
         
     }
     
@@ -176,17 +184,7 @@
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
-    if (parseController == false)
-    {
-        parseController = true;
-        if (elementValue != nil) {
-            // init the ad hoc string with the value
-            elementValue = [[NSMutableString alloc] initWithString:string];
-        } else {
-            // append value to the ad hoc string
-            [elementValue appendString:string];
-        }
-    }
+
 }
     
 

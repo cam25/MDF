@@ -155,7 +155,16 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        NSLog(@"row=%d", indexPath.row);
+    
+        
+        [locations removeObjectAtIndex:indexPath.row];//deletes cell at index
+        
+        //[buisnesses removeObjectAtIndex:indexPath.row];
+        [infoTable deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:true];
+    }
 }
 
 
@@ -164,12 +173,21 @@
 {
     UIBarButtonItem *item = (UIBarButtonItem*)sender;
     if (item.tag == 0) {
-      
+        //toggles edit/done button click
+        UIButton *button = (UIButton*)sender;
+        
+        if(button.tag == 0)
+        {
+         
+            [infoTable setEditing:true];
+            
+        }
         NSLog(@"This is EDIT Button");
         
         
     }else if (item.tag == 1)
     {
+        [infoTable setEditing:false];
         NSLog(@"This is DLT Button");
     }
 }

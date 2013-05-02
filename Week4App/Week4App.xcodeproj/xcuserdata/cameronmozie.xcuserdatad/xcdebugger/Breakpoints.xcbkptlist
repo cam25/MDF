@@ -8,13 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Week4App/FirstViewController.m"
-         timestampString = "389210915.250099"
+         timestampString = "389220872.375112"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "165"
-         endingLineNumber = "165"
-         landmarkName = "-onClick:"
-         landmarkType = "5">
+         startingLineNumber = "174"
+         endingLineNumber = "174">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -25,9 +23,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "101"
-         endingLineNumber = "101"
-         landmarkName = "-tableView:numberOfRowsInSection:"
-         landmarkType = "5">
+         endingLineNumber = "101">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -38,9 +34,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "81"
-         endingLineNumber = "81"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
+         endingLineNumber = "81">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -51,9 +45,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "137"
-         endingLineNumber = "137"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
-         landmarkType = "5">
+         endingLineNumber = "137">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -64,9 +56,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "40"
-         endingLineNumber = "40"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
+         endingLineNumber = "40">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -77,9 +67,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "43"
-         endingLineNumber = "43"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
+         endingLineNumber = "43">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -90,9 +78,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "138"
-         endingLineNumber = "138"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
-         landmarkType = "5">
+         endingLineNumber = "138">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"

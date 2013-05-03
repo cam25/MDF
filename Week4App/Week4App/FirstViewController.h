@@ -16,8 +16,7 @@
     //array of locations
     NSMutableArray *locations;
    
-    
-    NSString *areaString;
+   
     //NSMutableArray *cities;
 
 }

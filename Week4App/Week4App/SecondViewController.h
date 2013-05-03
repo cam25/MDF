@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "locationNfo.h"
 @protocol xmlViewer <NSObject>
 
 @required
@@ -20,6 +20,15 @@
 {
     IBOutlet UITextView *xmlView;
     id<xmlViewer> delegate;
+    NSURLRequest *request;
+    NSString *locationState;
+    NSURL *url;
+    NSURLConnection *urlConnection;
+    NSMutableData *requestData;
+    NSString *requestString;
+    NSString *areaString;
+    NSMutableArray *locations;
 }
 @property (strong) id<xmlViewer> delegate;
+@property (nonatomic, strong)locationNfo *location;
 @end

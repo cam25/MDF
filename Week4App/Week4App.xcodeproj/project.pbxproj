@@ -29,6 +29,8 @@
 		11FDB6D1172EE88D00744641 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FDB6D0172EE88D00744641 /* DataManager.m */; };
 		11FDB6D4172F1AB300744641 /* locationNfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FDB6D3172F1AB200744641 /* locationNfo.m */; };
 		11FDB6D717300C9B00744641 /* weatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FDB6D617300C9B00744641 /* weatherData.m */; };
+		11FDB6D91733320F00744641 /* w4Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 11FDB6D81733320F00744641 /* w4Icon.png */; };
+		11FDB6DB1733321B00744641 /* w4Iconret.png in Resources */ = {isa = PBXBuildFile; fileRef = 11FDB6DA1733321B00744641 /* w4Iconret.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,10 @@
 		11FDB6D3172F1AB200744641 /* locationNfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locationNfo.m; sourceTree = "<group>"; };
 		11FDB6D517300C9A00744641 /* weatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weatherData.h; sourceTree = "<group>"; };
 		11FDB6D617300C9B00744641 /* weatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weatherData.m; sourceTree = "<group>"; };
+		11FDB6D81733320F00744641 /* w4Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w4Icon.png; sourceTree = "<group>"; };
+		11FDB6DA1733321B00744641 /* w4Iconret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w4Iconret.png; sourceTree = "<group>"; };
+		11FDB6DC1733323100744641 /* w4Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w4Icon.png; sourceTree = "<group>"; };
+		11FDB6DE1733323900744641 /* w4Iconret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w4Iconret.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		11FDB68D172D96D900744641 = {
 			isa = PBXGroup;
 			children = (
+				11FDB6DE1733323900744641 /* w4Iconret.png */,
+				11FDB6DC1733323100744641 /* w4Icon.png */,
 				11FDB69F172D96D900744641 /* Week4App */,
 				11FDB698172D96D900744641 /* Frameworks */,
 				11FDB697172D96D900744641 /* Products */,
@@ -110,6 +118,8 @@
 		11FDB69F172D96D900744641 /* Week4App */ = {
 			isa = PBXGroup;
 			children = (
+				11FDB6DA1733321B00744641 /* w4Iconret.png */,
+				11FDB6D81733320F00744641 /* w4Icon.png */,
 				11FDB6A8172D96D900744641 /* AppDelegate.h */,
 				11FDB6A9172D96D900744641 /* AppDelegate.m */,
 				11FDB6B1172D96D900744641 /* FirstViewController.h */,
@@ -212,6 +222,8 @@
 				11FDB6C1172D96D900744641 /* FirstViewController.xib in Resources */,
 				11FDB6C4172D96D900744641 /* SecondViewController.xib in Resources */,
 				11FDB6CB172EE7A100744641 /* DetailView.xib in Resources */,
+				11FDB6D91733320F00744641 /* w4Icon.png in Resources */,
+				11FDB6DB1733321B00744641 /* w4Iconret.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -105,7 +105,7 @@
                 [requestData writeToFile:fullPath atomically:true];
             }
         }
-        // NSLog(@"%@",requestString);
+         NSLog(@"%@",requestString);
     }
     NSData *xmlData = [self GetfileDataFromFile:@"index.xml"];
     
@@ -116,6 +116,7 @@
         [parser setDelegate:self];
         [parser parse];
     }
+    //NSLog(@"%@",xmlData);
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
@@ -157,6 +158,7 @@
         
         dateLabel.text = locationDate;
         tempLabel.text = locationTemp;
+        
         conditionLabel.text = locationCondtion;
         
         NSLog(@"temp: %@, date: %@, condition: %@",locationTemp, locationDate,locationCondtion);

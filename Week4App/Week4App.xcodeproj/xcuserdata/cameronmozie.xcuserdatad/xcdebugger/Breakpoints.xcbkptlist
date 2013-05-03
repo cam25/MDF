@@ -85,11 +85,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Week4App/DetailViewController.m"
-         timestampString = "389210908.193876"
+         timestampString = "389237355.387451"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "219"
-         endingLineNumber = "219"
+         startingLineNumber = "221"
+         endingLineNumber = "221"
          landmarkName = "@implementation DetailViewController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -98,11 +98,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Week4App/DetailViewController.m"
-         timestampString = "389210908.762856"
+         timestampString = "389237355.387451"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "220"
-         endingLineNumber = "220"
+         startingLineNumber = "222"
+         endingLineNumber = "222"
          landmarkName = "-xmlDataString"
          landmarkType = "5">
       </FileBreakpoint>
@@ -111,11 +111,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Week4App/DetailViewController.m"
-         timestampString = "389210909.357017"
+         timestampString = "389237355.387451"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "221"
-         endingLineNumber = "221"
+         startingLineNumber = "223"
+         endingLineNumber = "223"
          landmarkName = "-xmlDataString"
          landmarkType = "5">
       </FileBreakpoint>

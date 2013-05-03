@@ -39,6 +39,7 @@
     
     // set the textView text to the fetched in request string
     xmlView.text = rawText;
+    NSLog(@"%@",rawText);
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

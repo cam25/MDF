@@ -37,18 +37,21 @@
 					
 - (void)viewDidLoad
 {
+    
+    //array of locations to be looped through and output to textview
      locations = [[NSMutableArray alloc]initWithObjects:@"http://weather.yahooapis.com/forecastrss?w=2502265",@"http://weather.yahooapis.com/forecastrss?w=2436202&u=cl",@"http://weather.yahooapis.com/forecastrss?w=2471217&u=cl",@"http://weather.yahooapis.com/forecastrss?w=2359991&u=cl",@"http://weather.yahooapis.com/forecastrss?w=2391279&u=cl",@"http://weather.yahooapis.com/forecastrss?w=2367105&u=cl",@"http://weather.yahooapis.com/forecastrss?w=12590119&u=cl",@"http://weather.yahooapis.com/forecastrss?w=2490383&u=cl",@"http://weather.yahooapis.com/forecastrss?w=2379574&u=cl",@"http://weather.yahooapis.com/forecastrss?w=2507854&u=cl", nil];
     
+    //loops through locations 
     for (int i=0; i <= [locations count] - 1; i++){
-        [self getXML:[locations objectAtIndex:i]];
+        [self getXML:[locations objectAtIndex:i]];//parses the xml strings at index
     }
   
     
-    //Request sent to server
+    //server request
     request = [[NSURLRequest alloc] initWithURL:url];
     if(request != nil)
     {
-        //Receives response
+      
         urlConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
         
         requestData = [NSMutableData data];
@@ -78,10 +81,10 @@
 }
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    //check that data exists
+
     if (data !=nil)
     {
-        //append data to previous requestData
+        //append data to requestData
         [requestData appendData:data];
     }
 }
@@ -91,9 +94,9 @@
     requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
     if(requestString != nil)
     {
-        //log out number of object in array and the raw XML Data
-        NSLog(@"YOU DATA IS BELOW");
-        NSLog(@"%@", requestString);
+
+       
+       // NSLog(@"%@", requestString);
         
         xmlView.text = requestString;
     }
